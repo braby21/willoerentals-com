@@ -1,0 +1,296 @@
+body {
+	max-width: 1400px;
+	background: gray;
+	margin: auto;
+	position: relative;
+	/*SET A FONT*/
+}
+.container {
+	background: #fff;
+	width: 100%;
+}
+header {
+	width: 100%;
+	margin: 0;
+}
+.willoe-header-logo {
+	width: 160px;
+	padding: 1.5rem;
+	float: left;
+}
+nav {
+	list-style: none;
+	float: left;
+    text-align:center;
+    line-height: 4rem;
+    font-size: 1.2rem;
+}
+nav li {
+	display: inline;	/*block inline so they don't occupy 100% of the available width and stack up nicely*/
+	padding-right: 20px;
+	float: left;
+}
+nav a {
+	display: inline-block;	/*inline-block to ensure the links don't break onto new lines but still obey padding values*/
+	text-decoration: none;
+	color: #204288;
+	width: 100%;
+	padding-right: 10px;
+}
+nav a:hover {
+	color: #00aa00;
+	text-decoration: underline;
+}
+.fb-header-logo {
+	visibility: hidden;
+}
+.fb-aside-logo {
+	visibility: visible;
+	padding-top: 1rem;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.about-willoe {
+	position: relative;
+	height: 320px;
+	width: 100%;
+	background: #ffffff url('images/willoe-temp-background-image.jpg') no-repeat center center;
+	opacity: .9;
+}
+.h1-about-intro {
+	position: absolute;
+	top: 12%;
+	left: 5%; 
+	width: 60%;
+	color: #fff;
+}
+.about-logo {
+	height: 60px;
+	padding: 1rem;
+}
+ .slider-container {
+	position: relative;
+	width: 75%;
+	float: left;
+	height: 320px;
+	margin-bottom: 40px;
+}
+#slider {
+	width: 576px;
+	height: 320px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.slides {
+	display: block;
+	width: 5184px;
+	height: 320px;
+	margin: 0 0 0 -576px;
+	padding: 0;
+}
+.slide {
+	float: left;
+	list-style: none;
+	width: 576px;
+	height: 320px;
+}
+.slides li {
+	text-align: center;
+}
+.black {
+	width: 576px;
+	background: black;
+}
+.blue {
+	width: 576px;
+	background: blue;
+}
+.fa-arrow-circle-o-right {
+  right: 25%;
+  bottom: 50%;
+  position: absolute;
+  color: gray;
+}
+.fa-arrow-circle-o-left {
+  left: 25%;
+  bottom: 50%;
+  position: absolute;
+  color: gray;
+}
+.fa-arrow-circle-o-right:hover,
+.fa-arrow-circle-o-left:hover,
+.fa-play-circle-o:hover,
+.fa-pause:hover
+ {
+	color: #000;
+}
+.index-product-image {
+	width: 360px;
+	text-align: center;
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+.index-product-image-medsize {
+	width: 280px;
+	text-align: center;
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+.index-product-image-smallsize {
+	width: 200px;
+	text-align: center;
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+aside {
+	float: right;
+	width: 25%;
+	color: #204288;
+}
+aside h4 {
+	margin-bottom: 0;
+}
+aside p {
+	font-size: 0.85em;
+	margin-top: 0;
+}
+aside img {
+	width: 120px;
+}
+.floatoff {
+	float: none;
+	margin: 2rem 4rem;
+}
+.map-container {
+	position: absolute;
+	top: 103px;
+	right: 20%;
+	width: 800px;
+	height: 360px;
+	background: #fff;
+	border-radius: 10px;
+	-moz-box-shadow: 5px 5px 5px #777777;
+	-webkit-box-shadow: 5px 5px 5px #777777;
+	box-shadow: 5px 5px 5px #777777;
+	padding: 5px;
+	visibility: hidden;
+}
+iframe {
+	border: none;
+	width: 100%;
+	height: 360px;
+}
+.form-container {
+	position: absolute;
+	top: 103px;
+	right: 360px;
+	width: 500px;
+	height: 470px;
+	background: #0083cb;
+	color: #fff;
+	border-radius: 10px;
+	-moz-box-shadow: 5px 5px 5px #777777;
+	-webkit-box-shadow: 5px 5px 5px #777777;
+	box-shadow: 5px 5px 5px #777777;
+	padding: 10px;
+	visibility: hidden;
+}
+.form-container h3 {
+	text-align: center;
+	padding-bottom: 1rem;
+}
+form label {
+	float: left;
+	width: 110px;
+	color: #fff;
+}
+form ul {
+	list-style: none;
+	color: #000;
+}
+legend {
+	font-weight: bold;
+}
+fieldset:last-child {
+	border: none;
+}
+button {
+	background: #0083cb;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	color: #fff;
+	display: block;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	padding: 0.5rem 1rem;
+}
+button:hover {
+	background: #fff;
+	color: #0083cb;
+	cursor: pointer;
+}
+footer {
+	background-color: #204288;
+	color: #fff;
+}
+footer p {
+	padding: 1rem;
+	margin: 0;
+	font-size: .75rem;
+}
+
+@media all and (min-width: 480px) {
+	
+}
+
+@media all and (min-width: 720px) {
+
+	nav {
+		border: 1px solid blue;
+	}
+
+}
+
+@media all and (min-width: 960px) {
+
+	nav {
+		border: 1px solid green;
+	}
+
+}
+
+
+@media all and (min-width: 1024px) {
+
+	nav {
+		border: 1px solid red;
+	}
+
+
+	.fb-header-logo {
+		float: right;
+		padding: 2.5rem;
+		visibility: visible;
+	}
+
+	.fb-aside-logo {
+		visibility: hidden;
+	}
+
+}
+
+@media all and (min-width: 1264px) {
+
+	nav {
+		border: 1px solid black;
+	}
+
+}
