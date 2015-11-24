@@ -64,7 +64,7 @@ $(function() {
         startSlider();
     });
 
-    $('cancel-form').on('click', function() {
+    $('#cancel-form').on('click', function() {
         e.preventDefault();
         $('.form-container').css('visibility', 'hidden');
         $('.overlay').css('visibility', 'hidden');
