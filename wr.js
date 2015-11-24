@@ -61,10 +61,10 @@ $(function() {
         e.preventDefault();
         $('.form-container').css('visibility', 'hidden');
         $('.overlay').css('visibility', 'hidden');
-        startSlider();
+        startSlider();    
     });
 
-    $('#cancel-form').on('click', function() {
+    $('#cancel-form').on('click', function(e) {
         e.preventDefault();
         $('.form-container').css('visibility', 'hidden');
         $('.overlay').css('visibility', 'hidden');
