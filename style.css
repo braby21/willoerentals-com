@@ -12,22 +12,14 @@ CSS LEGEND
 
 .container {
 	width: 100%;
-	margin: 0 auto;
 }
 .willoe-header-container {
-	width: 180px;
-	float: left;
-	margin: 3%
+	width: 240px;
+	margin: 0 auto;
 }
 .cra-header-container {
-	width: 120px;
-	float: right;
-}
-.small-image {
-	width: 120px;
-}
-.med-image {
-	width: 180px
+	visibility: hidden;
+	display: none;
 }
 .clearfix:after {
     content: "";
@@ -77,9 +69,6 @@ aside h3 {
 }
 aside p {
 	margin-top: 0.5rem;
-}
-aside img {
-	width: 120px;
 }
 iframe {
 	border: none;
@@ -259,6 +248,7 @@ button:hover {
 		width: 140px;
 		float: right;
 		margin: 0.5% 2%;
+		visibility: visible;
 	}
 	.content {
 		width: 50%;
