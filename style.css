@@ -15,7 +15,6 @@ CSS LEGEND
 }
 .willoe-header-container {
 	width: 240px;
-	padding: 1rem;
 	margin: 0 auto;
 }
 .cra-header-container {
@@ -112,15 +111,6 @@ body {
 .dark-font {
 	color: #204288;
 }
-.services {
-	text-align: center;
-	color: #204288;
-	height: 200px;
-}
-footer {
-	width: 100%;
-	margin: 0 auto;
-}
 
 /* #map-container */
 
@@ -138,6 +128,7 @@ footer {
 	box-shadow: 5px 5px 5px #777777;
 	padding: 5px;
 	visibility: hidden;
+	display: none;
 	z-index: 100;
 }
 iframe {
@@ -166,6 +157,7 @@ iframe {
 	box-shadow: 5px 5px 5px #777777;
 	padding: 10px;
 	visibility: hidden;
+	display: none;
 	z-index: 100;
 }
 .form-container h3 {
@@ -227,6 +219,7 @@ button:hover {
 	width: 100%;
 	z-index: 1;
 	visibility: hidden;
+	display: none;
 }
 
 @media all and (min-width: 480px) {

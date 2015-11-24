@@ -60,26 +60,33 @@ $(function() {
     $('#submit-form').on('click', function(e){
         e.preventDefault();
         $('.form-container').css('visibility', 'hidden');
+        $('.form-container').css('display', 'none');
         $('.overlay').css('visibility', 'hidden');
+        $('.overlay').css('display', 'none');
         startSlider();    
     });
 
     $('#cancel-form').on('click', function(e) {
         e.preventDefault();
         $('.form-container').css('visibility', 'hidden');
+        $('.form-container').css('display', 'none');
         $('.overlay').css('visibility', 'hidden');
+        $('.overlay').css('display', 'none');
         startSlider();    
     });
 
     $('#form-launch').on('click', function(e){
         e.preventDefault();
         $('.form-container').css('visibility', 'visible');
+        $('.form-container').css('display', 'block');
         $('#name').val('');
         $('#email').val('');
         $('#phone').val('');
         $('#comments').val('');
         $('.map-container').css('visibility', 'hidden');
+        $('.map-container').css('display', 'none');
         $('.overlay').css('visibility', 'visible');
+        $('.overlay').css('display', 'block');
         pauseSlider();
 
 
@@ -108,8 +115,11 @@ $(function() {
     $('#map-launch').on('click', function(e){
         e.preventDefault();
         $('.map-container').css('visibility', 'visible');
+        $('.map-container').css('display', 'block');
         $('.form-container').css('visibility', 'hidden');
+        $('.form-container').css('display', 'none');
         $('.overlay').css('visibility', 'visible');
+        $('.overlay').css('display', 'block');
         pauseSlider();
         /*
         var docHeight = $(document).height();
@@ -135,8 +145,11 @@ $(function() {
     $('.overlay').on('click', function(e){
         e.preventDefault();
         $('.map-container').css('visibility', 'hidden');
+        $('.map-container').css('display', 'none');
         $('.form-container').css('visibility', 'hidden');
+        $('.form-container').css('display', 'none');
         $('.overlay').css('visibility', 'hidden');
+        $('.overlay').css('display', 'none');
         startSlider();
     });
 
