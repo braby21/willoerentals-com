@@ -57,10 +57,11 @@ nav a {
     font-size: 1rem;
 }
 .content {
-	margin: 0 5%; 
+	margin: 0 1rem; 
 }
 aside {
-	margin: 5% 20%;
+	margin: 0 auto;
+	width: 50%;
 }
 aside img {
 	width: 120px;
@@ -69,6 +70,7 @@ aside img {
 .content-logo {
 	height: 60px;
 	padding: 1rem;
+	margin: 0 1rem;
 }
 aside h3 {
 	margin-bottom: 0;
@@ -173,7 +175,7 @@ iframe {
 	left: 50%;
     transform: translate(-50%, 0);
 	width: 500px;
-	height: 480px;
+	height: 490px;
 	background: #0083cb;
 	color: #fff;
 	border: 1px solid #fff;
@@ -202,9 +204,6 @@ form ul {
 #phone,
 #comments {
 	color: #000;
-}
-textarea {
-	margin-bottom: 0.25rem;
 }
 legend {
 	font-weight: bold;
@@ -264,7 +263,7 @@ button:hover {
 	.content {
 		width: 50%;
 		float: left;
-		margin: 2rem 4rem;
+		margin: 2rem 10%;
 	}
 
 	/* #slider */
