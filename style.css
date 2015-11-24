@@ -10,6 +10,9 @@ CSS LEGEND
 
 /* #structure */
 
+.container {
+	width: 100%;
+}
 .willoe-header-container {
 	width: 240px;
 	padding: 1rem;
@@ -346,9 +349,7 @@ button:hover {
 
 @media all and (min-width: 1024px) {
 
-	.container {
-		width: 100%;
-	}
+
 
 }
 
