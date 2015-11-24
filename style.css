@@ -231,17 +231,17 @@ button:hover {
 	.willoe-header-container {
 		width: 240px;
 		float: left;
-		margin: 2rem;
+		margin: 0.25rem;
 	}
 	.cra-header-container {
-		width: 120px;
+		width: 100px;
 		float: right;
-		margin: 2rem;
 		visibility: visible;
 		display: inline;
+		margin: 0.5rem;
 	}
 	.cra-logo {
-		width: 100%;
+		width: 100px;
 	}
 	.content {
 		width: 50%;
@@ -327,8 +327,10 @@ button:hover {
 @media all and (min-width: 720px) {
 	
 	.cra-header-container {
-		width: 160px;
-		margin: 1.25rem;
+		width: 140px;
+	}
+	.cra-logo {
+		width: 140px;
 	}
 	li a:hover {
 		background-color: #00aa00;
