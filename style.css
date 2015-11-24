@@ -10,11 +10,9 @@ CSS LEGEND
 
 /* #structure */
 
-.container {
-	width: 100%;
-}
 .willoe-header-container {
 	width: 240px;
+	padding: 1rem;
 	margin: 0 auto;
 }
 .cra-header-container {
@@ -52,8 +50,7 @@ nav a {
 	margin: 0 1rem; 
 }
 aside {
-	margin: 0 auto;
-	width: 50%;
+	margin: 0 1rem;
 }
 aside img {
 	width: 120px;
@@ -242,13 +239,17 @@ button:hover {
 	.willoe-header-container {
 		width: 240px;
 		float: left;
-		margin: 1.5% 5%;
+		margin: 2rem;
 	}
 	.cra-header-container {
-		width: 140px;
+		width: 120px;
 		float: right;
-		margin: 0.5% 2%;
+		margin: 2rem;
 		visibility: visible;
+		display: inline;
+	}
+	.cra-logo {
+		width: 100%;
 	}
 	.content {
 		width: 50%;
@@ -333,6 +334,10 @@ button:hover {
 
 @media all and (min-width: 720px) {
 	
+	.cra-header-container {
+		width: 160px;
+		margin: 1.25rem;
+	}
 	li a:hover {
 		background-color: #00aa00;
 		text-decoration: underline;
@@ -347,7 +352,9 @@ button:hover {
 
 @media all and (min-width: 1024px) {
 
-
+	.container {
+		width: 100%;
+	}
 
 }
 
