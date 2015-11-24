@@ -57,10 +57,18 @@ $(function() {
 
     $slide.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
 
-    $('button').on('click', function(e){
+    $('#submit-form').on('click', function(e){
         e.preventDefault();
         $('.form-container').css('visibility', 'hidden');
-        $('#overlay').css('z-index',-1);
+        $('.overlay').css('visibility', 'hidden');
+        startSlider();
+    });
+
+    $('cancel-form').on('click', function() {
+        e.preventDefault();
+        $('.form-container').css('visibility', 'hidden');
+        $('.overlay').css('visibility', 'hidden');
+        startSlider();    
     });
 
     $('#form-launch').on('click', function(e){
@@ -71,7 +79,12 @@ $(function() {
         $('#phone').val('');
         $('#comments').val('');
         $('.map-container').css('visibility', 'hidden');
+        $('.overlay').css('visibility', 'visible');
+        pauseSlider();
 
+
+
+        /*
         var docHeight = $(document).height();
 
         $("body").append("<div id='overlay'></div>");
@@ -87,18 +100,23 @@ $(function() {
              'width': '100%',
              'z-index': 1
         });
+
+        */
     });
+
 
     $('#map-launch').on('click', function(e){
         e.preventDefault();
         $('.map-container').css('visibility', 'visible');
         $('.form-container').css('visibility', 'hidden');
-
+        $('.overlay').css('visibility', 'visible');
+        pauseSlider();
+        /*
         var docHeight = $(document).height();
 
-        $("body").append("<div id='overlay'></div>");
+        $('body').append("<div id='overlay'></div>");
 
-        $("#overlay")
+        $('#overlay')
         .height(docHeight)
         .css({
              'opacity' : 0.6,
@@ -107,16 +125,40 @@ $(function() {
              'left': 0,
              'background-color': 'black',
              'width': '100%',
-             'z-index': 1
+             'z-index': 1,
+             'visibility': 'visible'
         });
+        */
     });
 
+
+    $('.overlay').on('click', function(e){
+        e.preventDefault();
+        $('.map-container').css('visibility', 'hidden');
+        $('.form-container').css('visibility', 'hidden');
+        $('.overlay').css('visibility', 'hidden');
+        startSlider();
+    });
+
+/*
     $('body').on('click', function(e){
+
+        if( $(e.target).hasClass('form-container') )
+        {
+            return
+        }
+
+        if( $(e.target).hasClass('map-container') )
+        {
+            return
+        }
+
 
         if(e.target.id == 'map-launch') {
             e.preventDefault();
             $('.map-container').css('visibility', 'visible');
             $('.form-container').css('visibility', 'hidden');
+            $('#overlay').css('visibility', 'visible');
             pauseSlider();
             return;
         }
@@ -129,27 +171,33 @@ $(function() {
             $('#phone').val('');
             $('#comments').val('');
             $('.map-container').css('visibility', 'hidden');
+            $('#overlay').css('visibility', 'visible');
             pauseSlider();
             return;
         }
 
+        $('#overlay').css('visibility', 'hidden');
+        $('.map-container').css('visibility', 'hidden');
+        $('.form-container').css('visibility', 'hidden');
+        startSlider();
+
+
         if ($('.map-container').css('visibility') == 'visible') {
             $('.map-container').css('visibility', 'hidden');
-            $('#overlay').css('z-index',-1);
-            startSlider();
+
+            return;
         }
 
         if ($('.form-container').css('visibility') == 'visible') {
             $('.form-container').css('visibility', 'hidden');
             $('#overlay').css('z-index',-1);
             startSlider();
+            return;
         }
 
+
+
     });
+*/
 
-
-
-
-
-
-});
+}); //end document object function

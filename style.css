@@ -9,6 +9,7 @@ CSS LEGEND
 */
 
 /* #structure */
+
 .container {
 	width: 100%;
 	margin: 0 auto;
@@ -110,7 +111,7 @@ footer p {
 body {
 	background-color: #4c4c4c;
 	font-family: Helvetica, Verdana, Arial, sans-serif;
-	max-width: 1400px;
+	max-width: 100%;
 	margin: auto;
 	position: relative;
 }
@@ -143,7 +144,8 @@ footer {
 .map-container {
 	position: absolute;
 	top: 150px;
-	right: 25%;
+	left: 50%;
+    transform: translate(-50%, 0);
 	width: 800px;
 	height: 480px;
 	background: #fff;
@@ -157,6 +159,8 @@ footer {
 }
 iframe {
 	border: none;
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -166,11 +170,13 @@ iframe {
 .form-container {
 	position: absolute;
 	top: 150px;
-	right: 25%;
+	left: 50%;
+    transform: translate(-50%, 0);
 	width: 500px;
-	height: 470px;
+	height: 480px;
 	background: #0083cb;
 	color: #fff;
+	border: 1px solid #fff;
 	border-radius: 10px;
 	-moz-box-shadow: 5px 5px 5px #777777;
 	-webkit-box-shadow: 5px 5px 5px #777777;
@@ -190,13 +196,26 @@ form label {
 }
 form ul {
 	list-style: none;
+}
+#name,
+#email,
+#phone,
+#comments {
 	color: #000;
+}
+textarea {
+	margin-bottom: 0.25rem;
 }
 legend {
 	font-weight: bold;
 }
+fieldset {
+	margin-top: 1rem;
+}
 fieldset:last-child {
 	border: none;
+	text-align: center;
+	margin: 0;
 }
 button {
 	background: #0083cb;
@@ -205,7 +224,7 @@ button {
 	-webkit-border-radius: 5px;
 	-khtml-border-radius: 5px;
 	color: #fff;
-	display: block;
+	display: inline;
 	letter-spacing: 1px;
 	margin: 0 auto;
 	padding: 0.5rem 1rem;
@@ -216,7 +235,19 @@ button:hover {
 	cursor: pointer;
 }
 
+/* #overlay */
 
+.overlay {
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	visibility: hidden;
+}
 
 @media all and (min-width: 480px) {
 	
@@ -233,7 +264,7 @@ button:hover {
 	.content {
 		width: 50%;
 		float: left;
-		margin: 2% 0 0 10%;
+		margin: 2rem 4rem;
 	}
 
 	/* #slider */
@@ -306,7 +337,7 @@ button:hover {
 		width: 15%;
 		float: right;
 		min-width: 200px;
-		margin: 10% 7% 0 0;
+		margin: 2rem;
 	}
 
 }
