@@ -59,9 +59,31 @@ nav a {
 .content {
 	margin: 0 1rem; 
 }
+.stihl-products-container {
+	width: 220px;
+	margin: 0 auto;
+}
+.fall-flyer-banner{
+	display: none;
+}
+.product-categories {
+	width: 220px;
+}
+.product-info-container {
+	width: 220px;
+	height: 160px;
+	text-align: center;
+}
+.product-info-container img {
+	height: 80px;
+}
+.stihl-products-button,
+.stihl-products-button img {
+	display: none;
+}
 aside {
-	width: 200px;
 	margin: 0 1rem;
+	padding: 0 1rem;
 }
 aside img {
 	width: 120px;
@@ -79,6 +101,11 @@ aside h3 {
 }
 aside p {
 	margin-top: 0.5rem;
+}
+.aside-map {
+		margin: 1rem auto;
+		width: 300px;
+		height: 200px;
 }
 footer {
 	padding: 0.025rem 0;
@@ -236,7 +263,7 @@ button:hover {
 @media all and (min-width: 480px) {
 	
 	header {
-		width: 90%;
+		width: 95%;
 		margin: 0 auto;
 	}
 	.willoe-header-container {
@@ -259,15 +286,53 @@ button:hover {
 		display: none;
 	}
 	.content {
-		margin: 1rem;
+		margin: 2rem;
+		width: 90%;
+	}
+	.stihl-products-container {
+		width: 440px;
+		margin: 0 auto;
+	}
+	.fall-flyer-banner{
+		display: none;
+	}
+	.product-categories {
+		width: 220px;
+		float: left;
+	}
+	.product-info-container {
+		width: 220px;
+		height: 160px;
+		text-align: center;
+	}
+	.product-info-container img {
+		height: 80px;
+	}
+	.stihl-products-button,
+	.stihl-products-button img {
+		width: 120px;
+		float: none;
+		display: none;
 	}
 	nav a {
 	    width: 4.5rem;
 		padding: 1rem 0;
 	    font-size: 0.8rem;
 	}
-
-	
+	aside {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.contact-info {
+		width: 50%;
+		float: left;
+	}
+	.aside-map {
+		margin-top: 2rem;
+		width: 50%;
+		height: 200px;
+		float: right;
+	}
 
 }
 
@@ -275,7 +340,6 @@ button:hover {
 @media all and (min-width: 720px) {
 	
 	header {
-		width: 75%;
 	}
 	.willoe-header-container {
 		margin: 0;
@@ -297,12 +361,22 @@ button:hover {
 		text-decoration: underline;
 	}
 	.content {
-		width: 40%;
-		min-width: 576px;
-		margin: 1rem auto;
+		width: 80%;
+		margin: 2rem auto;
+	}
+	.contact-info {
+		width: 240px;
+		margin-left: 7.5%;
+		float: left;
+	}
+	.aside-map {
+		margin: 1rem 7.5% 0 0;
+		width: 260px;
+		height: 260px;
+		float: right;
 	}
 	aside {
-		margin: 0 auto;
+		float: left;
 	}
 
 	/* #slider */
@@ -382,28 +456,100 @@ button:hover {
 
 @media all and (min-width: 840px) {
 
+	header {
+	}
 	.content {
+		width: 55%;
 		float: left;
-		margin: 1rem 0 0 2rem;
+		min-width: 576px;
+		margin: 2rem 0 2rem 2.5%;
+	}
+	.stihl-products-container {
+		width: 720px;
+	}
+	.fall-flyer-banner{
+		width: 120px;
+		float: left;
+		display: inline-block;
+	}
+	.product-categories {
+		width: 220px;
+		float: left;
+	}
+	.product-info-container {
+		width: 220px;
+		height: 160px;
+		text-align: center;
+	}
+	.product-info-container img {
+		height: 80px;
+	}
+	.stihl-products-button,
+	.stihl-products-button img {
+		width: 120px;
+		float: none;
+		display: block;
 	}
 	aside {
 		float: right;
-		margin: 1.50rem 2rem 0 000;
+		margin: 2rem 2.5% 0 0;
+		width: 180px;
+	}
+	.contact-info {
+		width: 240px;
+		margin: 0;
+		float: none;
+	}
+	.aside-map {
+		margin: 0 auto;
+		width: 180px;
+		height: 160px;
+		float: none;
 	}
 }
 
 @media all and (min-width: 1024px) {
 
 	header {
-		width: 80%
+		width: 90%;
 	}
 	.content {
+		width: 60%;
 		float: left;
-		margin: 2rem 0 0 10%;
+		margin: 2rem 0 2rem 3%;
+	}
+	.stihl-products-container {
+		width: 720px;
+	}
+	.fall-flyer-banner{
+		width: 120px;
+		float: left;
+	}
+	.product-categories {
+		width: 220px;
+		float: left;
+	}
+	.product-info-container {
+		width: 220px;
+		height: 160px;
+		text-align: center;
+	}
+	.product-info-container img {
+		height: 80px;
+	}
+	.stihl-products-button,
+	.stihl-products-button img {
+		width: 120px;
+		float: left;
 	}
 	aside {
+		width: 200px;
 		float: right;
-		margin: 3rem 10% 0 0;
+		margin: 2rem 3% 0 0;
+	}
+	.aside-map {
+		width: 200px;
+		height: 180px;
 	}
 
 }
@@ -411,16 +557,17 @@ button:hover {
 @media all and (min-width: 1160px) {
 
 	header {
-		width: 70%;
+		width: 85%;
 	}
 	.content {
-		width: 40%;
-		min-width: 576px;
-		float: left;
-		margin: 2rem 0 0 15%;
+		margin: 2rem 0 2rem 7.5%;
+	}
+	.stihl-products-container {
+		width: 720px;
+		margin: 2rem 0;
 	}
 	aside {
-		margin: 3rem 15% 0 0;
+		margin: 2rem 7.5% 0 0;
 	}
 	nav a {
 	    width: 8rem;

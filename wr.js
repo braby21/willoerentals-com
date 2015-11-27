@@ -1,5 +1,16 @@
 $(function() {
 
+    $('#stihl-button').on('mouseover', function(){
+        $(this).attr('src','images/stihl/en_button_small_a.png');
+    }).on('mouseout', function(){
+        $(this).attr('src','images/stihl/en_button_small_na.png');
+    });    
+
+
+
+
+
+
     var currentYear = new Date();
     $('#footer-date').html("&copy;" + currentYear.getFullYear() + " Willoe Rentals");
 
@@ -88,8 +99,6 @@ $(function() {
         $('.overlay').css('visibility', 'visible');
         $('.overlay').css('display', 'block');
         pauseSlider();
-
-
 
         /*
         var docHeight = $(document).height();
