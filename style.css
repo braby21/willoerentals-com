@@ -456,12 +456,12 @@ button:hover {
 	}
 	.toro-product-container-two {
 		width: 600px;
-		height: 440px;
+		height: 400px;
 		text-align: center;
 	}
 	.toro-product-container-three {
 		width: 600px;
-		height: 440px;
+		height: 400px;
 		text-align: center;
 	}		
 	.toro-product-info-one {
@@ -634,12 +634,12 @@ button:hover {
 	}
 	.toro-product-container-two {
 		width: 600px;
-		height: 440px;
+		height: 400px;
 		text-align: center;
 	}
 	.toro-product-container-three {
 		width: 600px;
-		height: 440px;
+		height: 400px;
 		text-align: center;
 	}		
 	.toro-product-info-one {
@@ -658,7 +658,7 @@ button:hover {
 	}
 	.toro-products-container ul {
 		text-align: left;
-		padding-left: 1rem;
+		padding-left: 2rem;
 	}
 	.toro-products-container li {
 		font-size: .75rem;
