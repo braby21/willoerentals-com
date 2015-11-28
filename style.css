@@ -5,13 +5,18 @@ CSS LEGEND
 2) #skin
 3) #slider
 4) #map-container
-5) #form-container 
+5) #form-container
 */
 
 /* #structure */
 
 .container {
 	width: 100%;
+}
+.content-container {
+	width: 100%;
+	max-width: 1380px;
+	margin: 0 auto;
 }
 .willoe-header-container {
 	width: 240px;
@@ -59,9 +64,24 @@ nav a {
 .content {
 	margin: 0 1rem; 
 }
+.stihl-content {
+	margin: 0 1rem;
+	max-width: 680px;
+}
+.toro-content {
+	margin: 0 1rem;
+}
 .stihl-products-container {
 	width: 220px;
-	margin: 0 auto;
+	margin: 3rem auto;
+}
+.stihl-h1-logo {
+	width: 75px;
+	vertical-align: bottom;
+}
+.toro-h1-logo {
+	width: 60px;
+	vertical-align: bottom;
 }
 .fall-flyer-banner{
 	display: none;
@@ -81,6 +101,51 @@ nav a {
 .stihl-products-button img {
 	display: none;
 }
+
+
+
+.toro-products-container {
+	width: 300px;
+}
+.toro-product-container-one {
+	width: 300px;
+	text-align: center;
+}
+.toro-product-container-two {
+	width: 300px;
+	text-align: center;
+}
+.toro-product-container-three {
+	width: 300px;
+	text-align: center;
+}		
+.toro-product-info-one {
+	width: 300px;
+	text-align: center;
+}
+.toro-product-info-two {
+	width: 300px;
+	text-align: center;
+}
+.toro-products-container h4,
+.toro-products-container img {
+	text-align: center;
+}
+.toro-products-container ul {
+	text-align: left;
+	padding-left: 1rem;
+}
+.toro-products-container li {
+	font-size: .75rem;
+}
+.toro-products-container img {
+	width: 240px;
+	text-align: center;
+}
+
+
+
+
 aside {
 	margin: 0 1rem;
 	padding: 0 1rem;
@@ -286,12 +351,21 @@ button:hover {
 		display: none;
 	}
 	.content {
-		margin: 2rem;
+		margin: 1rem 2rem;
 		width: 90%;
+	}
+	.stihl-content {
+		margin: 1rem 2rem;
+		width: 90%;	
+		float: left;
+	}
+	.toro-content {
+		margin: 1rem 2rem;
+		width: 90%;	
+		float: left;
 	}
 	.stihl-products-container {
 		width: 440px;
-		margin: 0 auto;
 	}
 	.fall-flyer-banner{
 		display: none;
@@ -363,6 +437,57 @@ button:hover {
 	.content {
 		width: 80%;
 		margin: 2rem auto;
+	}
+	.stihl-content {
+		width: 80%;
+		margin: 2rem 4rem;
+	}
+	.toro-content {
+		width: 85%;
+		margin: 2rem 4rem;
+	}
+	.toro-products-container {
+		width: 600px;
+	}
+	.toro-product-container-one {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}
+	.toro-product-container-two {
+		width: 600px;
+		height: 440px;
+		text-align: center;
+	}
+	.toro-product-container-three {
+		width: 600px;
+		height: 440px;
+		text-align: center;
+	}		
+	.toro-product-info-one {
+		width: 300px;
+		float: left;
+		text-align: center;
+	}
+	.toro-product-info-two {
+		width: 300px;
+		float: right;
+		text-align: center;
+	}
+	.toro-products-container h4,
+	.toro-products-container img {
+		text-align: center;
+	}
+	.toro-products-container ul {
+		text-align: left;
+		padding-left: 1rem;
+	}
+	.toro-products-container li {
+		font-size: .75rem;
+	}
+	.toro-products-container img {
+		width: 240px;
+		text-align: center;
 	}
 	.contact-info {
 		width: 240px;
@@ -464,8 +589,17 @@ button:hover {
 		min-width: 576px;
 		margin: 2rem 0 2rem 2.5%;
 	}
+	.stihl-content {
+		width: 70%;
+		margin: 2rem 0 2rem 2%;
+	}
+	.toro-content {
+		width: 70%;
+		margin: 2rem 0 2rem 2%;
+	}
 	.stihl-products-container {
-		width: 720px;
+		width: 560px;
+		margin: 2rem 0;
 	}
 	.fall-flyer-banner{
 		width: 120px;
@@ -490,9 +624,52 @@ button:hover {
 		float: none;
 		display: block;
 	}
+	.toro-products-container {
+		width: 600px;
+	}
+	.toro-product-container-one {
+		width: 600px;
+		height: 400px;
+		text-align: center;
+	}
+	.toro-product-container-two {
+		width: 600px;
+		height: 440px;
+		text-align: center;
+	}
+	.toro-product-container-three {
+		width: 600px;
+		height: 440px;
+		text-align: center;
+	}		
+	.toro-product-info-one {
+		width: 300px;
+		float: left;
+		text-align: center;
+	}
+	.toro-product-info-two {
+		width: 300px;
+		float: right;
+		text-align: center;
+	}
+	.toro-products-container h4,
+	.toro-products-container img {
+		text-align: center;
+	}
+	.toro-products-container ul {
+		text-align: left;
+		padding-left: 1rem;
+	}
+	.toro-products-container li {
+		font-size: .75rem;
+	}
+	.toro-products-container img {
+		width: 240px;
+		text-align: center;
+	}
 	aside {
 		float: right;
-		margin: 2rem 2.5% 0 0;
+		margin: 2.5rem 2% 0 0;
 		width: 180px;
 	}
 	.contact-info {
@@ -511,15 +688,26 @@ button:hover {
 @media all and (min-width: 1024px) {
 
 	header {
-		width: 90%;
+		width: 92%;
 	}
 	.content {
 		width: 60%;
 		float: left;
-		margin: 2rem 0 2rem 3%;
+		margin: 2rem 0 2rem 5%;
 	}
+	.stihl-content {
+		width: 67%;
+		float: left;
+		margin: 2rem 0 2rem 4%;
+	}
+	.toro-content {
+		width: 680px;
+		float: left;
+		margin: 2rem 0 2rem 4%;
+	}	
 	.stihl-products-container {
-		width: 720px;
+		width: 680px;
+		margin: 2rem 0;
 	}
 	.fall-flyer-banner{
 		width: 120px;
@@ -545,7 +733,7 @@ button:hover {
 	aside {
 		width: 200px;
 		float: right;
-		margin: 2rem 3% 0 0;
+		margin: 2.5rem 4% 0 0;
 	}
 	.aside-map {
 		width: 200px;
@@ -558,23 +746,28 @@ button:hover {
 
 	header {
 		width: 85%;
+		max-width: 1200px;
 	}
 	.content {
 		margin: 2rem 0 2rem 7.5%;
 	}
+	.stihl-content {
+		margin: 2rem 0 2rem 7.5%;
+	}
+	.toro-content {
+		margin: 2rem 0 2rem 7.5%;
+	}	
 	.stihl-products-container {
-		width: 720px;
 		margin: 2rem 0;
 	}
 	aside {
-		margin: 2rem 7.5% 0 0;
+		margin: 2.5rem 7.5% 0 0;
 	}
 	nav a {
 	    width: 8rem;
 		padding: 1rem 0;
 	    font-size: 1.2rem;
 	}
-
 
 }
 
