@@ -275,8 +275,65 @@ $(function() {
         $(this).siblings().css('color','#204288');
         $(this).css('color','#00aa00');
     });
-
-
-
+    $('#cat-nav-nine').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-nine').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-ten').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-ten').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-eleven').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-eleven').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-twelve').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-twelve').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-thirteen').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-thirteen').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-fourteen').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-fourteen').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-fifteen').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-fifteen').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-sixteen').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-sixteen').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-seventeen').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-seventeen').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-eighteen').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-eighteen').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
 
 }); //end document object function
