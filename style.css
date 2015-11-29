@@ -39,20 +39,20 @@ CSS LEGEND
     display: table;
     clear: both;
 }
-nav {
+.main-nav  {
 	width: 100%;
 }
-nav ul {
+.main-nav ul {
     width:100%;
     margin:0;
     padding:0;
     list-style:none;
     text-align:center;
 }
-nav li { 
+.main-nav li { 
     display:inline;
 }
-nav a {
+.main-nav a {
     width: 8rem;
     text-align: center;
     display: inline-block;
@@ -392,7 +392,7 @@ button:hover {
 		float: none;
 		display: none;
 	}
-	nav a {
+	.main-nav a {
 	    width: 4.5rem;
 		padding: 1rem 0;
 	    font-size: 0.8rem;
@@ -429,7 +429,7 @@ button:hover {
 	.cra-logo {
 		width: 120px;
 	}
-	nav a {
+	.main-nav a {
 	    width: 6rem;
 		padding: 1rem 0;
 	    font-size: 1rem;
@@ -445,6 +445,10 @@ button:hover {
 	.stihl-content {
 		width: 80%;
 		margin: 2rem 4rem;
+	}
+	.product-info-container:hover {
+		text-decoration: underline;
+		color: rgb(243,122,31);
 	}
 	.toro-content {
 		width: 85%;
@@ -760,14 +764,66 @@ button:hover {
 	}
 	.toro-content {
 		margin: 2rem 0 2rem 7.5%;
-	}	
+	}
+	.rental-content {
+		margin: 2rem 0 2rem 2%;
+		width: 55.5rem;
+		height: 40rem;
+		float: left;
+		position: relative;
+	}
 	.stihl-products-container {
 		margin: 2rem 0;
 	}
+	.rental-side-nav {
+		width: 20.5rem;
+		position: absolute;
+		top: 5rem;
+		left: 0;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+	}
+	.rental-side-nav ul {
+		list-style: none;
+		padding-left: 0;
+
+	}
+	.rental-side-nav li {
+		padding: 0.25rem 0;
+		border-bottom: 1px solid #204288;
+	}
+	.rental-side-nav li:hover {
+		color: #00aa00
+	}
+	.rental-rates-table {
+		width: 35rem;
+		position: absolute;
+		top: 5rem;
+		left: 23rem;
+		font-size: 0.9rem;
+	}
+	.rental-rates-table h2 {
+		text-align: center;
+	}
+	.prod-desc {
+		width: 13rem;
+		text-align: left;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem 1rem;
+	}
+	.currency {
+		text-align: right;
+	}
+	.rental-category-hide {
+		visibility: hidden;
+	}
+
 	aside {
 		margin: 2.5rem 7.5% 0 0;
 	}
-	nav a {
+	.main-nav a {
 	    width: 8rem;
 		padding: 1rem 0;
 	    font-size: 1.2rem;

@@ -19,7 +19,7 @@ $(function() {
     var pause = 5000;
     var currentSlide = 2;
 
-    //cache DOM
+    //cache the DOM
     var $slider = $('#slider');
     var $slides = $slider.find('.slides');
     var $slide = $slides.find('.slide');
@@ -221,6 +221,62 @@ $(function() {
 
     });
 */
+    // cache the DOM
+    var $rentalRatesTable = $('.rental-rates-table');
+
+    $('#cat-nav-one').css('color','#00aa00');
+
+    $('#cat-nav-one').on('click',function() {
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-one').css('visibility','visible');
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    })
+    $('#cat-nav-two').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden')
+        $('#cat-two').css('visibility','visible');
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-three').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-three').css('visibility','visible');
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+
+    });
+    $('#cat-nav-four').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-four').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-five').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-five').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-six').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-six').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-seven').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-seven').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+    $('#cat-nav-eight').on('click',function(){
+        $rentalRatesTable.css('visibility','hidden');
+        $('#cat-eight').css('visibility','visible')
+        $(this).siblings().css('color','#204288');
+        $(this).css('color','#00aa00');
+    });
+
+
 
 
 }); //end document object function
