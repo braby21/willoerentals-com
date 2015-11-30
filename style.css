@@ -414,7 +414,7 @@ button:hover {
 		position: relative;
 		margin: 2rem auto;
 		width: 28rem;
-		height: 46rem;
+		height: 50rem;
 	}
 	.stihl-products-container {
 		width: 440px;
@@ -644,6 +644,7 @@ button:hover {
 	}
 	aside {
 		float: left;
+		padding-bottom: 2rem;
 	}
 	.contact-info {
 		width: 240px;
@@ -923,7 +924,7 @@ button:hover {
 	.rental-content {
 		margin: 2rem 0 2rem 2.5%;
 		width: 44rem;
-		height: 40rem;
+		height: 42rem;
 		float: left;
 		position: relative;
 	}
@@ -1036,7 +1037,7 @@ button:hover {
 	.rental-content {
 		margin: 2rem 0 2rem 5%;
 		width: 50rem;
-		height: 45rem;
+		height: 46rem;
 		float: left;
 		position: relative;
 	}
