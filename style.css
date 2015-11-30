@@ -152,7 +152,7 @@ CSS LEGEND
 	visibility: hidden;
 }
 .rental-side-nav {
-	width: 22rem;
+	width: 18rem;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -176,7 +176,7 @@ CSS LEGEND
 	cursor: pointer;
 }
 .rental-rates-table {
-	width: 22rem;
+	width: 21rem;
 	position: absolute;
 	top: 2rem;
 	left: 0;
@@ -193,7 +193,7 @@ CSS LEGEND
 }
 .rental-rates-table th,
 .rental-rates-table td {
-	padding: .1rem .3rem;
+	padding: .1rem .2rem;
 }
 .back-to-rentals-menu {
 	visibility: hidden;
