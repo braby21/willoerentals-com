@@ -61,18 +61,22 @@ $(function() {
 
     // #Launch Form
     $('#form-launch').on('click', function(e){
-        e.preventDefault();
-        $('.form-container').css('visibility', 'visible');
-        $('.form-container').css('display', 'block');
-        $('#name').val('');
-        $('#email').val('');
-        $('#phone').val('');
-        $('#inquiry').val('');
-        $('.map-container').css('visibility', 'hidden');
-        $('.map-container').css('display', 'none');
-        $('.overlay').css('visibility', 'visible');
-        $('.overlay').css('display', 'block');
-        pauseSlider();
+        if ($(window).width() < 720) {
+            return
+        } else {
+            e.preventDefault();
+            $('.form-container').css('visibility', 'visible');
+            $('.form-container').css('display', 'block');
+            $('#name').val('');
+            $('#email').val('');
+            $('#phone').val('');
+            $('#inquiry').val('');
+            $('.map-container').css('visibility', 'hidden');
+            $('.map-container').css('display', 'none');
+            $('.overlay').css('visibility', 'visible');
+            $('.overlay').css('display', 'block');
+            pauseSlider();
+        }
     });
 
     // #Form-Close Button
@@ -87,16 +91,16 @@ $(function() {
 
     // #Form-Submit Button
     $('#submit-form').on('click', function(e){
-        e.preventDefault();
-        if(!$('#name').val() || !$('#email').val() || !$('#phone').val() || !$('#inquiry').val()){
-              $('.missing-fields-message').css('visibility','visible');
-              return;
-        }
-        $('.form-container').css('visibility', 'hidden');
-        $('.form-container').css('display', 'none');
-        $('.overlay').css('visibility', 'hidden');
-        $('.overlay').css('display', 'none');
-        startSlider();    
+            e.preventDefault();
+            if(!$('#name').val() || !$('#email').val() || !$('#phone').val() || !$('#inquiry').val()){
+                  $('.missing-fields-message').css('visibility','visible');
+                  return;
+            }
+            $('.form-container').css('visibility', 'hidden');
+            $('.form-container').css('display', 'none');
+            $('.overlay').css('visibility', 'hidden');
+            $('.overlay').css('display', 'none');
+            startSlider();
     });
 
     // cache the DOM
