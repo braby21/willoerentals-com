@@ -134,39 +134,30 @@
 		</div> <!-- closing container div -->
 
 		<div class="form-container clearfix">
-
-			<h3>Please complete the below and submit your inquiry</h3>
-
+			<h2>Contact Us</h2>
+			<div class="form-close-button"><i class="fa fa-times fa-2x"></i></div>
 			<form action="#" method="post" id="contact-form">
-				<fieldset>
-					<legend>Contact Info</legend>
 					<ul>
 						<li>
-							<label for="name">Name:</label>
-							<input type="text" id="name" size="30" maxlength="30" placeholder="First Name...">
+							<label for="name">Name <span class="required"> *</span></label>
+							<input type="text" id="name" size="48" placeholder="First Name...">
 						</li>
 						<li>
-							<label for="email">Email:</label>
-							<input type="text" id="email" size="30" maxlength="30" placeholder="Email Address..."/>
+							<label for="email">Email <span class="required"> *</span></label>
+							<input type="text" id="email" size="48" placeholder="Email Address..."/>
 						</li>
 						<li>
-							<label for="phone">Phone:</label>
-							<input type="text" id="phone" size="30" maxlength="30" placeholder="Phone Number..."/>
+							<label for="phone">Phone <span class="required"> *</span></label>
+							<input type="text" id="phone" size="48" placeholder="Phone Number..."/>
+						</li>
+						<li>
+							<label for="inquiry">Inquiry <span class="required"> *</span></label>
+							<textarea id="inquiry" cols="47" rows="8" placeholder="Enter Inquiry Here..."></textarea>
+						</li>
+						<li>
+							<button type="submit" id="submit-form">SUBMIT</button><div class="missing-fields-message">* Required Field</div>
 						</li>
 					</ul>
-				</fieldset>
-				<fieldset>
-					<legend>Comments</legend>
-					<ul>
-						<li>
-							<textarea id="comments" cols="41" rows="8" placeholder="Enter Comment's Here..."></textarea>
-						</li>
-					</ul>
-				</fieldset>
-				<fieldset>
-					<button type="submit" id="submit-form">SUBMIT</button>
-					<button type="submit" id="cancel-form">CANCEL</button>
-				</fieldset>
 			</form>
 		</div>
 

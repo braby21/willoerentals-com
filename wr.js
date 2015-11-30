@@ -54,33 +54,12 @@ $(function() {
     function pauseSlider() {
         clearInterval(interval);
     }
-    
-    $('.fa-arrow-circle-o-left').on('click', slideLeft);
-
-    $('.fa-arrow-circle-o-right').on('click', slideRight);
 
     startSlider();
 
     $slide.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
 
-    $('#submit-form').on('click', function(e){
-        e.preventDefault();
-        $('.form-container').css('visibility', 'hidden');
-        $('.form-container').css('display', 'none');
-        $('.overlay').css('visibility', 'hidden');
-        $('.overlay').css('display', 'none');
-        startSlider();    
-    });
-
-    $('#cancel-form').on('click', function(e) {
-        e.preventDefault();
-        $('.form-container').css('visibility', 'hidden');
-        $('.form-container').css('display', 'none');
-        $('.overlay').css('visibility', 'hidden');
-        $('.overlay').css('display', 'none');
-        startSlider();    
-    });
-
+    // #Launch Form
     $('#form-launch').on('click', function(e){
         e.preventDefault();
         $('.form-container').css('visibility', 'visible');
@@ -88,143 +67,37 @@ $(function() {
         $('#name').val('');
         $('#email').val('');
         $('#phone').val('');
-        $('#comments').val('');
+        $('#inquiry').val('');
         $('.map-container').css('visibility', 'hidden');
         $('.map-container').css('display', 'none');
         $('.overlay').css('visibility', 'visible');
         $('.overlay').css('display', 'block');
         pauseSlider();
-
-        /*
-        var docHeight = $(document).height();
-
-        $("body").append("<div id='overlay'></div>");
-
-        $("#overlay")
-        .height(docHeight)
-        .css({
-             'opacity' : 0.6,
-             'position': 'absolute',
-             'top': 0,
-             'left': 0,
-             'background-color': 'black',
-             'width': '100%',
-             'z-index': 1
-        });
-
-        */
     });
 
-
-    $('#map-launch').on('click', function(e){
+    // #Form-Close Button
+    $('.fa-times').on('click', function(e) { 
         e.preventDefault();
-        $('.map-container').css('visibility', 'visible');
-        $('.map-container').css('display', 'block');
-        $('.form-container').css('visibility', 'hidden');
-        $('.form-container').css('display', 'none');
-        $('.overlay').css('visibility', 'visible');
-        $('.overlay').css('display', 'block');
-        pauseSlider();
-        /*
-        var docHeight = $(document).height();
-
-        $('body').append("<div id='overlay'></div>");
-
-        $('#overlay')
-        .height(docHeight)
-        .css({
-             'opacity' : 0.6,
-             'position': 'absolute',
-             'top': 0,
-             'left': 0,
-             'background-color': 'black',
-             'width': '100%',
-             'z-index': 1,
-             'visibility': 'visible'
-        });
-        */
-    });
-
-
-    $('.overlay').on('click', function(e){
-        e.preventDefault();
-        $('.map-container').css('visibility', 'hidden');
-        $('.map-container').css('display', 'none');
         $('.form-container').css('visibility', 'hidden');
         $('.form-container').css('display', 'none');
         $('.overlay').css('visibility', 'hidden');
         $('.overlay').css('display', 'none');
-        startSlider();
+        startSlider();    
     });
 
-/*
-    $('body').on('click', function(e){
-
-        if( $(e.target).hasClass('form-container') )
-        {
-            return
+    // #Form-Submit Button
+    $('#submit-form').on('click', function(e){
+        e.preventDefault();
+        if(!$('#name').val() || !$('#email').val() || !$('#phone').val() || !$('#inquiry').val()){
+              $('.missing-fields-message').css('visibility','visible');
+              return;
         }
-
-        if( $(e.target).hasClass('map-container') )
-        {
-            return
-        }
-
-
-        if(e.target.id == 'map-launch') {
-            e.preventDefault();
-            $('.map-container').css('visibility', 'visible');
-            $('.form-container').css('visibility', 'hidden');
-            $('#overlay').css('visibility', 'visible');
-            pauseSlider();
-            return;
-        }
-
-        if(e.target.id == 'form-launch') {
-            e.preventDefault();
-            $('.form-container').css('visibility', 'visible');
-            $('#name').val('');
-            $('#email').val('');
-            $('#phone').val('');
-            $('#comments').val('');
-            $('.map-container').css('visibility', 'hidden');
-            $('#overlay').css('visibility', 'visible');
-            pauseSlider();
-            return;
-        }
-
-        $('#overlay').css('visibility', 'hidden');
-        $('.map-container').css('visibility', 'hidden');
         $('.form-container').css('visibility', 'hidden');
-        startSlider();
-
-
-        if ($('.map-container').css('visibility') == 'visible') {
-            $('.map-container').css('visibility', 'hidden');
-
-            return;
-        }
-
-        if ($('.form-container').css('visibility') == 'visible') {
-            $('.form-container').css('visibility', 'hidden');
-            $('#overlay').css('z-index',-1);
-            startSlider();
-            return;
-        }
-
-
-
+        $('.form-container').css('display', 'none');
+        $('.overlay').css('visibility', 'hidden');
+        $('.overlay').css('display', 'none');
+        startSlider();    
     });
-*/
-/*
-    //Function to the css rule
-    function checkSize(){
-        if ($(".sampleClass").css("float") == "none" ){
-        // your code here
-        }
-    }  
-*/
-
 
     // cache the DOM
     var $rentalRatesTable = $('.rental-rates-table');
@@ -400,16 +273,7 @@ $(function() {
             $backToRentalsMenu.css('visibility','visible');
         }
     });
-    $('#cat-nav-eighteen').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-eighteen').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
+
     $backToRentalsMenu.on('click',function() {
         $backToRentalsMenu.css('visibility','hidden');
         $('.rental-side-nav').css('visibility','visible').find('li').css('color','#204288');

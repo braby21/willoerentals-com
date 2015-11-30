@@ -208,6 +208,12 @@ CSS LEGEND
 .currency {	
 	text-align: right;
 }
+.indent {
+	text-indent: 0.5rem;
+}
+.italicize {
+	font-style: italic;
+}
 aside {
 	margin: 0 1rem;
 	padding: 0 1rem;
@@ -292,74 +298,91 @@ iframe {
 
 .form-container {
 	position: absolute;
-	top: 150px;
+	top: 5rem;
 	left: 50%;
     transform: translate(-50%, 0);
 	width: 500px;
-	height: 490px;
-	background: #0083cb;
-	color: #fff;
-	border: 1px solid #fff;
-	border-radius: 10px;
-	-moz-box-shadow: 5px 5px 5px #777777;
-	-webkit-box-shadow: 5px 5px 5px #777777;
-	box-shadow: 5px 5px 5px #777777;
-	padding: 10px;
+	height: 500px;
+	background-color: #fff;
+	color: #204288;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
 	visibility: hidden;
 	display: none;
 	z-index: 100;
 }
-.form-container h3 {
-	text-align: center;
-	padding-bottom: 1rem;
+.form-container h2 {
+	padding-left: 2.5rem;
 }
-form label {
-	float: left;
-	width: 110px;
-	color: #fff;
+.form-close-button {
+	position: fixed;
+	top: 2rem;
+	right: 4rem;
+	cursor: pointer;
+	transition: transform 0.3s ease-in;
+	padding: 0;
+}
+.form-close-button:hover {
+	color: #00aa00;
+	  -webkit-transform: rotate(60deg); /* Ch <36, Saf 5.1+ */
+      -ms-transform: rotate(60deg); /* IE 9 */
+          transform: rotate(90deg); /* W3C, IE 10, Fx 16+, Op 12.1+ */
 }
 form ul {
-	list-style: none;
+    margin: 0 auto;
+    font-size: 0.85rem;
 }
-#name,
-#email,
-#phone,
-#comments {
-	color: #000;
+form li {
+    padding: 0.25rem 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
 }
-legend {
-	font-weight: bold;
+form label {
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
+    width: 100%;
 }
-fieldset {
-	margin-top: 1rem;
+form input,
+textarea {
+    border:1px solid #bebebe;
+    padding: 7px;
+    margin:0px;
 }
-fieldset:last-child {
-	border: none;
-	text-align: center;
-	margin: 0;
+form input:hover,
+textarea:hover {
+    border: 1px solid #00aa00;
 }
-button {
-	background: #0083cb;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-khtml-border-radius: 5px;
-	color: #fff;
-	display: inline;
-	letter-spacing: 1px;
-	margin: 0 auto;
-	padding: 0.5rem 1rem;
+textarea{
+    height: 100px;
 }
-button:hover {
-	background: #fff;
-	color: #0083cb;
-	cursor: pointer;
+form button {
+    background: #204288;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+form button:hover{
+    background: #00aa00;
+}
+form .required{
+    color:red;
+    font-size: .75rem;
+}
+form .missing-fields-message {
+	color:red;
+    font-size: .75rem;
+    float: right;
+    padding: 1rem 3.5rem;
+    visibility: hidden;
 }
 
 /* #overlay */
-
 .overlay {
-	opacity: 0.6;
+	opacity: 0.75;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1036,8 +1059,8 @@ button:hover {
 	}
 	.rental-content {
 		margin: 2rem 0 2rem 5%;
-		width: 50rem;
-		height: 46rem;
+		width: 52rem;
+		height: 50rem;
 		float: left;
 		position: relative;
 	}
@@ -1078,12 +1101,12 @@ button:hover {
 		text-transform: uppercase;
 	}
 	.prod-desc {
-		width: 12.25rem;
+		width: 14rem;
 		text-align: left;
 	}
 	.rental-rates-table th,
 	.rental-rates-table td {
-		padding: .1rem 1rem;
+		padding: .1rem 0.75rem;
 	}
 	.currency {
 		text-align: right;
