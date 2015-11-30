@@ -74,8 +74,9 @@ CSS LEGEND
 .rental-content {
 	position: relative;
 	margin: 2rem auto;
-	width: 22rem;
+	width: 20rem;
 	height: 36rem;
+	border: 1px solid red;
 }
 .stihl-products-container {
 	width: 220px;
@@ -176,24 +177,28 @@ CSS LEGEND
 	cursor: pointer;
 }
 .rental-rates-table {
-	width: 21rem;
+	width: 20rem;
 	position: absolute;
 	top: 2rem;
 	left: 0;
 	font-size: 0.65rem;
 	visibility: hidden;
+	border: 1px solid red;
 }
 .rental-rates-table h2 {
 	text-align: center;
 	text-transform: uppercase;
+	border: 1px solid red;
 }
 .prod-desc {
-	width: 10rem;
+	width: 9.25rem;
 	text-align: left;
+	border: 1px solid red;
 }
 .rental-rates-table th,
 .rental-rates-table td {
 	padding: .1rem .2rem;
+	border: 1px solid red;
 }
 .back-to-rentals-menu {
 	visibility: hidden;
