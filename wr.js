@@ -107,175 +107,20 @@ $(function() {
     var $rentalRatesTable = $('.rental-rates-table');
     var $backToRentalsMenu = $('.back-to-rentals-menu');
 
-    $('#cat-nav-one').on('click',function() {
+    $(function() {
+      $('.rental-side-nav li').on('click',function(e) {
+        e.preventDefault();
+        var data =  $(this).data('content');
+        var contentDiv = '#content-' + data;
         $rentalRatesTable.css('visibility','hidden');
-        $('#cat-one').css('visibility','visible');
+        $(contentDiv).css('visibility','visible');
         $(this).siblings().css('color','#204288');
         $(this).css('color','#00aa00');
         if($rentalRatesTable.css('left') == '0px') {
             $(this).parent().parent().css('visibility','hidden');
             $backToRentalsMenu.css('visibility','visible');
         }
-    });
-    $('#cat-nav-two').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden')
-        $('#cat-two').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-three').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-three').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-four').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-four').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-five').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-five').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-six').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-six').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-seven').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-seven').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-eight').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-eight').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-nine').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-nine').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-ten').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-ten').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-eleven').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-eleven').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-twelve').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-twelve').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-thirteen').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-thirteen').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-fourteen').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-fourteen').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-fifteen').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-fifteen').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-sixteen').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-sixteen').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
-    });
-    $('#cat-nav-seventeen').on('click',function(){
-        $rentalRatesTable.css('visibility','hidden');
-        $('#cat-seventeen').css('visibility','visible');
-        $(this).siblings().css('color','#204288');
-        $(this).css('color','#00aa00');
-        if($rentalRatesTable.css('left') == '0px') {
-            $(this).parent().parent().css('visibility','hidden');
-            $backToRentalsMenu.css('visibility','visible');
-        }
+      });
     });
 
     $backToRentalsMenu.on('click',function() {
@@ -292,7 +137,7 @@ $(function() {
             $('.rental-side-nav').css('visibility','visible').find('li').css('color','#204288');
             $backToRentalsMenu.css('visibility','hidden');
             $rentalRatesTable.css('visibility','hidden');
-            $('#cat-one').css('visibility','visible');
+            $('#content-air-compressors').css('visibility','visible');
             $('#cat-nav-one').css('color','#00aa00');
         }
         else {
