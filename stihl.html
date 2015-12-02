@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>Willoe Rentals | Equipment Rentals | Stratford, Ontario</title>
-		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="shortcut icon" type="image/jpg" href="images/willoe-shortcut-icon.jpg">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,19 +21,19 @@
 			</header>
 
 			<nav class="main-nav dark-background-white-font">
-				<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="stihl.html">STIHL</a></li>
-						<li><a href="toro.html">TORO</a></li>
-						<li><a href="rentals.html">RENTALS</a></li>
-						<li><a href="services.html">SERVICES</a></li>
-						<li><a href="contact.html" id="form-launch">CONTACT</a></li>
+				<ul class="center-text">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="stihl.html">STIHL</a></li>
+					<li><a href="toro.html">TORO</a></li>
+					<li><a href="rentals.html">RENTALS</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="contact.html" id="form-launch">CONTACT</a></li>
 			  	</ul>
 			</nav>
 
-			<div class="content-container">
+			<div class="content-container clearfix">
 
-				<div class="stihl-content dark-font">
+				<div class="content dark-font clearfix">
 
 					<h1><img src="images/stihl/STIHL-logo.png" alt="Willoe Rentals is a Proud STIHL dealer!" class="stihl-h1-logo" /> Outdoor Power Equipment</h1>
 
@@ -48,21 +48,21 @@
 						<div class="fall-flyer-banner"><a href="http://www.stihlpromos.ca/e-flyer/en/fallflyer2015.php" target="_blank"><img src="images/stihl/fall-flyer-2015-banner.jpg" alt="Click to see the Stihl Fall Flyer"/></a></div>
 
 						<div class="product-categories">	
-							<div class="product-info-container"> <!--TO DO: Make the entire div the a href so when you click on the div it goes to the buying guide -->
+							<div class="product-info-container center-text"> 
 								<h4>Chainsaws</h4>
 								<a href="http://www.stihldealers.ca/Search.aspx/Stratford/Ontario/ON/N5A+2N7/Willoe+Rentals/chainsaws.html?Lang=en" target="_blank"><img src="images/stihl/ms211.jpg" alt="Stihl item#MS211" /></a>
 							</div>
-							<div class="product-info-container"> <!--TO DO: Make the entire div the a href so when you click on the div it goes to the buying guide -->
+							<div class="product-info-container center-text"> 
 								<h4>Handheld Blowers</h4>
 								<a href="http://www.stihldealers.ca/Search.aspx/Stratford/Ontario/ON/N5A+2N7/Willoe+Rentals/blowers.html?Lang=en" target="_blank"><img src="images/stihl/bg55.jpg" alt="Stihl item#BG55"/></a>
 							</div>
 						</div>
 						<div class="product-categories">
-							<div class="product-info-container"> <!--TO DO: Make the entire div the a href so when you click on the div it goes to the buying guide -->
+							<div class="product-info-container center-text"> 
 								<h4>Backpack Blowers</h4>
 								<a href="http://www.stihldealers.ca/Search.aspx/Stratford/Ontario/ON/N5A+2N7/Willoe+Rentals/blowers.html?Lang=en" target="_blank"><img src="images/stihl/br200.jpg" alt="Stihl item#BR200"/></a>
 							</div>
-							<div class="product-info-container"> <!--TO DO: Make the entire div the a href so when you click on the div it goes to the buying guide -->
+							<div class="product-info-container center-text"> 
 								<h4>Shredders</h4>
 								<a href="http://www.stihldealers.ca/Search.aspx/Stratford/Ontario/ON/N5A+2N7/Willoe+Rentals/blowers.html?Lang=en" target="_blank"><img src="images/stihl/sh86ce.jpg" alt="Stihl item#SH86E"/></a>
 							</div>
@@ -98,7 +98,7 @@
 
 		</div> <!-- closing container div -->
 
-		<div class="form-container clearfix">
+		<div class="form-container white-background-blue-font clearfix">
 			<h2>Contact Us</h2>
 			<div class="form-close-button"><i class="fa fa-times fa-2x"></i></div>
 			<form action="#" method="post" id="contact-form">
@@ -120,7 +120,7 @@
 							<textarea id="inquiry" cols="47" rows="8" placeholder="Enter Inquiry Here..."></textarea>
 						</li>
 						<li>
-							<button type="submit" id="submit-form">SUBMIT</button><div class="missing-fields-message">* Required Field</div>
+							<button type="submit" class="dark-background-white-font" id="submit-form">SUBMIT</button><div class="missing-fields-message">* Required Field</div>
 						</li>
 					</ul>
 			</form>
@@ -128,11 +128,11 @@
 
 		<div class="overlay"></div>
 
-		<footer class="dark-background-white-font">
+		<footer class="dark-background-white-font font-face-font">
 			<p id="footer-date"></p>
 		</footer>
-		<script src="jquery-2.1.4.min.js"></script>
-   		<script src="wr.js"></script>
+		<script src="javascript/jquery-2.1.4.min.js"></script>
+   		<script src="javascript/wr.js"></script>
 
 
 	</body>

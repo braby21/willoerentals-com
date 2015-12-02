@@ -1,0 +1,645 @@
+/*
+CSS LEGEND
+==========
+1) #OOCSS Classes
+2) #Mobile & Basic Styling
+3) #MediaQuery 480px
+4) #MediaQuery 720px
+5) #slider
+6) #form-container
+7) #MediaQuery 840px
+8) #MediaQuery 1024px
+*/
+
+/* #OOCSS Classes */
+.currency {	
+	text-align: right;
+}
+.center-text {
+	text-align: center;
+}
+.indent {
+	text-indent: 0.5rem;
+}
+.italicize {
+	font-style: italic;
+}
+@font-face {
+    font-family: 'aleoregular';
+    src: url('fonts/aleo-regular-webfont.eot');
+    src: url('fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aleo-regular-webfont.woff') format('woff'),
+         url('fonts/aleo-regular-webfont.ttf') format('truetype'),
+         url('fonts/aleo-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-face-font {
+	font-family: 'aleoregular';
+}
+.dark-background-white-font {
+	background-color: #204288;
+	color: #fff;
+}
+.dark-font {
+	color: #204288;
+}
+.white-background-blue-font {
+	background-color: #fff;
+	color: #204288;
+}	
+
+
+/* #Mobile & Basic Styling */
+
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	position: relative;
+}
+header {
+	max-width: 1200px;
+}
+.container {
+	width: 100%;
+}
+.content-container {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2% 0;
+}
+.willoe-header-container {
+	width: 240px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+.cra-header-container {
+	display: none;
+}
+.cra-secondary-container {
+	width: 120px;
+	margin: 0 auto;
+}
+.cra-logo {
+	width: 120px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-nav  {
+	width: 100%;
+}
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.main-nav li { 
+    display:inline;
+}
+.main-nav a {
+    width: 8rem;
+    display: inline-block;
+	padding: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.content,
+.stihl-content,
+.toro-content {
+	margin: 0 auto;
+}
+
+.rental-content {
+	position: relative;
+	margin: 0 auto;
+	width: 20rem;
+	height: 38rem;
+}
+.stihl-products-container {
+	width: 220px;
+	margin: 3rem auto;
+}
+.stihl-h1-logo {
+	width: 75px;
+	vertical-align: bottom;
+}
+.toro-h1-logo {
+	width: 60px;
+	vertical-align: bottom;
+}
+.fall-flyer-banner{
+	display: none;
+}
+.product-categories {
+	width: 220px;
+}
+.product-info-container {
+	width: 220px;
+	height: 160px;
+}
+.product-info-container img {
+	height: 80px;
+}
+.stihl-products-button,
+.stihl-products-button img {
+	display: none;
+	float: none;
+}
+.toro-product-container,
+.toro-product-info-one,
+.toro-product-info-two {
+	width: 300px;
+}
+.toro-product-container ul {
+	text-align: left;
+	padding-left: 1rem;
+}
+.toro-product-container li {
+	font-size: .75rem;
+}
+.toro-product-container img {
+	width: 240px;
+}
+.rental-category-hide {
+	visibility: hidden;
+}
+.rental-side-nav {
+	width: 18rem;
+	position: absolute;
+	top: 0;
+	left: 0.25rem;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.rental-side-nav h1 {
+	font-size: 1.6rem;
+}
+.rental-side-nav ul {
+	list-style: none;
+	padding-left: 0;
+}
+.rental-side-nav li {
+	padding: 0.2rem 0;
+	border-bottom: 1px solid #204288;
+}
+.rental-rates-table {
+	width: 20rem;
+	position: absolute;
+	top: 2rem;
+	left: 0;
+	font-size: 0.65rem;
+	visibility: hidden;
+}
+.rental-rates-table h2 {
+	text-transform: uppercase;
+}
+.prod-desc {
+	width: 9.25rem;
+	text-align: left;
+}
+.rental-rates-table th,
+.rental-rates-table td {
+	padding: .1rem .2rem;
+}
+.back-to-rentals-menu {
+	visibility: hidden;
+	position: absolute;
+	top: .75rem;
+	left: .75rem;
+	font-size: 1.25rem;
+}
+aside {
+	width: 260px;
+	margin: 0 auto;
+}
+aside img {
+	width: 120px;
+	margin: 1rem 0;
+}
+iframe {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: 260px;
+	height: 200px;
+}
+.content-stihl-logo {
+	height: 60px;
+	padding: 1rem;
+}
+.content-toro-logo {
+	height: 62px;
+	padding: 1rem;
+}
+aside h3 {
+	margin-bottom: 0;
+}
+aside p {
+	margin-top: 0.5rem;
+}
+footer {
+	padding: 1% 4%;
+}
+.slider-container {
+	display: none;
+}
+.form-container {
+	display: none;
+}
+
+
+/* #MediaQuery 480px */
+
+@media all and (min-width: 480px) {
+	
+	header {
+		width: 95%;
+		margin: 0 auto;
+	}
+	.willoe-header-container {
+		float: left;
+		margin: 0;
+		padding: 1rem;
+	}
+	.cra-header-container {
+		width: 120px;
+		float: right;
+		visibility: visible;
+		display: inline;
+		margin: 1rem 0;
+	}
+	.cra-secondary-container {
+		display: none;
+	}
+	.content-container {
+		width: 95%;
+	}
+	.rental-content {
+		width: 28rem;
+		height: 50rem;
+	}
+	.stihl-products-container {
+		width: 440px;
+	}
+	.product-categories {
+		float: left;
+	}
+	.main-nav a {
+	    width: 4.5rem;
+	    font-size: 0.8rem;
+	}
+	.rental-side-nav {
+		left: 20%;
+	}
+	.rental-rates-table {
+		width: 28rem;
+		font-size: 0.9rem;
+	}
+	.prod-desc {
+		width: 13rem;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem .3rem;
+	}
+	.back-to-rentals-menu:hover {
+		cursor: pointer;
+	}
+	aside,
+	.rentals-aside {
+		width: 200px;
+		margin: 0 auto;
+	}
+	iframe {
+		width: 200px;
+		height: 180px;
+	}
+
+}
+
+/* #MediaQuery 720px */
+
+@media all and (min-width: 720px) {
+	
+	.main-nav a {
+	    width: 7rem;
+	    font-size: 1rem;
+	}
+	li a:hover {
+		background-color: #00aa00;
+		text-decoration: underline;
+	}
+	.content {
+		margin: 0 auto;
+	}
+	.rental-content {
+		margin: 0 auto;
+		width: 43rem;
+		height: 42rem;
+	}
+	.product-info-container:hover {
+		text-decoration: underline;
+		color: rgb(243,122,31);
+	}
+	.toro-product-container{
+		width: 600px;
+		height: 400px;
+	}		
+	.toro-product-info-one {
+		float: left;
+	}
+	.toro-product-info-two {
+		float: right;
+	}
+	.rental-side-nav {
+		width: 13rem;
+		left: 0;
+		font-size: 0.75rem;
+	}
+	.rental-side-nav li:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.rental-side-nav h1 {
+		font-size: 1.05rem;
+	}
+	#content-air-compressors {
+		visibility: visible;
+	}
+	.rental-rates-table {
+		top: 0;
+		left: 14rem;
+		font-size: 0.75rem;
+	}
+	.prod-desc {
+		width: 11rem;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem .4rem;
+	}
+
+
+	/* #slider */
+
+	.slider-container {
+		visibility: visible;
+		display: inline;
+		position: relative;
+		width: 100%;
+		min-width: 576px;
+		margin: 0 auto;
+		height: 320px;
+	}
+	#slider {
+		width: 576px;
+		height: 320px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	.slides {
+		display: block;
+		width: 5184px;
+		height: 320px;
+		margin: 0 0 0 -576px;
+		padding: 0;
+	}
+	.slide {
+		float: left;
+		list-style: none;
+		width: 576px;
+		height: 320px;
+	}
+	.index-product-image {
+		width: 360px;
+	  	position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	}
+	.index-product-image-medsize {
+		width: 280px;
+	  	position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	}
+	.index-product-image-smallsize {
+		width: 200px;
+	  	position: relative;
+	  	top: 50%;
+	  	transform: translateY(-50%);
+	}
+
+	/* #form-container */
+
+	.form-container {
+		position: absolute;
+		top: 5rem;
+		left: 50%;
+	    transform: translate(-50%, 0);
+		width: 500px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		border-radius: 0.5rem;
+		padding: 0.75rem;
+		z-index: 100;
+	}
+	.form-container h2 {
+		padding-left: 2.5rem;
+	}
+	.form-close-button {
+		position: fixed;
+		top: 2rem;
+		right: 4rem;
+		cursor: pointer;
+		transition: transform 0.3s ease-in;
+		padding: 0;
+	}
+	.form-close-button:hover {
+		color: #00aa00;
+		  -webkit-transform: rotate(60deg); /* Ch <36, Saf 5.1+ */
+	      -ms-transform: rotate(60deg); /* IE 9 */
+	          transform: rotate(90deg); /* W3C, IE 10, Fx 16+, Op 12.1+ */
+	}
+	form ul {
+	    margin: 0 auto;
+	    font-size: 0.85rem;
+	}
+	form li {
+	    padding: 0.25rem 0;
+	    display: block;
+	    list-style: none;
+	    margin: 0.75rem 0 0 0;
+	}
+	form label {
+	    margin: 0 0 3px 0;
+	    padding: 0;
+	    display:block;
+	    font-weight: bold;
+	    width: 100%;
+	}
+	form input,
+	textarea {
+	    border: 1px solid #bebebe;
+	    padding: 0.5rem;
+	    margin: 0;
+	}
+	form input:hover,
+	textarea:hover {
+	    border: 1px solid #00aa00;
+	}
+	form button {
+	    padding: 0.5rem 1rem;
+	    border: none;
+	}
+	form button:hover{
+	    background: #00aa00;
+	}
+	form .required{
+	    color: red;
+	    font-size: .75rem;
+	}
+	form .missing-fields-message {
+		color: red;
+	    font-size: .75rem;
+	    float: right;
+	    padding: 1rem 3.5rem;
+	    visibility: hidden;
+	}
+
+	/* #overlay */
+	.overlay {
+		opacity: 0.75;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: black;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		display: none;
+	}
+
+}
+
+/* #MediaQuery 840px */
+
+@media all and (min-width: 840px) {
+
+	.content {
+		width: 65%;
+		float: left;
+		min-width: 576px;
+	}
+	.rental-content {
+		width: 37rem;
+		height: 40rem;
+		float: left;
+	}
+	.stihl-products-container {
+		width: 560px;
+		margin: 2rem 0;
+	}
+	.fall-flyer-banner{
+		width: 120px;
+		float: left;
+		display: inline-block;
+	}
+	.stihl-products-button,
+	.stihl-products-button img {
+		display: block;
+		width: 120px;
+	}		
+	.toro-product-container ul {
+		padding-left: 2rem;
+	}
+	.rental-side-nav {
+		width: 12rem;
+		font-size: 0.7rem;
+	}
+	.rental-side-nav li {
+		padding: 0.2rem 0;
+		border-bottom: 1px solid #204288;
+	}
+	.rental-side-nav li:hover {
+		text-decoration: underline;
+	}
+	.rental-rates-table {
+		width: 24rem;
+		left: 13rem;
+		font-size: 0.7rem;
+	}
+	.prod-desc {
+		width: 10rem;
+	}
+	aside {
+		float: right;
+	}
+	.rentals-aside {
+		width: 180px;
+		float: right;
+		font-size: .7rem;
+	}
+	.rentals-aside iframe {
+		width: 180px;
+		height: 160px;
+	}
+}
+
+/* #MediaQuery 1024px */
+
+@media all and (min-width: 1024px) {
+
+	.content {
+		width: 70%;
+		min-width: 680px;
+	}
+	.rental-content {
+		width: 44rem;
+		height: 42rem;
+	}
+	.stihl-products-container {
+		width: 680px;
+	}
+	.stihl-products-button,
+	.stihl-products-button img {
+		float: left;
+	}
+	.rental-side-nav {
+		width: 14rem;
+		font-size: 0.8rem;
+	}
+	.rental-side-nav h1 {
+		font-size: 1.25rem;
+	}
+	.rental-rates-table {
+		width: 28rem;
+		left: 16rem;
+		font-size: 0.8rem;
+	}
+	.prod-desc {
+		width: 12rem;
+	}
+	.rental-rates-table th,
+	.rental-rates-table td {
+		padding: .1rem .5rem;
+	}
+	aside,
+	.rentals-aside {
+		font-size: 1rem;
+	}
+	.rentals-aside {
+		width: 200px;
+	}
+	.rentals-aside iframe {
+		width: 200px;
+		height: 180px;
+	}
+}
+
+
+
+
+

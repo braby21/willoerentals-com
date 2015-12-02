@@ -65,15 +65,11 @@ $(function() {
             return
         } else {
             e.preventDefault();
-            $('.form-container').css('visibility', 'visible');
             $('.form-container').css('display', 'block');
             $('#name').val('');
             $('#email').val('');
             $('#phone').val('');
             $('#inquiry').val('');
-            $('.map-container').css('visibility', 'hidden');
-            $('.map-container').css('display', 'none');
-            $('.overlay').css('visibility', 'visible');
             $('.overlay').css('display', 'block');
             pauseSlider();
         }

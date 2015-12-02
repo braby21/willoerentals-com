@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>Willoe Rentals | Equipment Rentals | Stratford, Ontario</title>
-		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="shortcut icon" type="image/jpg" href="images/willoe-shortcut-icon.jpg">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,45 +21,45 @@
 			</header>
 
 			<nav class="main-nav dark-background-white-font">
-				<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="stihl.html">STIHL</a></li>
-						<li><a href="toro.html">TORO</a></li>
-						<li><a href="rentals.html">RENTALS</a></li>
-						<li><a href="services.html">SERVICES</a></li>
-						<li><a href="contact.html" id="form-launch">CONTACT</a></li>
+				<ul class="center-text">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="stihl.html">STIHL</a></li>
+					<li><a href="toro.html">TORO</a></li>
+					<li><a href="rentals.html">RENTALS</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="contact.html" id="form-launch">CONTACT</a></li>
 			  	</ul>
 			</nav>
 
 		<div class="content-container clearfix">
 
-			<div class="rental-content dark-font">
+			<div class="rental-content dark-font clearfix">
 
 				<nav class="rental-side-nav">
-					<h1>Rental Categories</h1>
+					<h1 class="center-text">Rental Categories</h1>
 					<ul>
 							<li data-content="air-compressors" id="cat-nav-one">Air Compressors</li>
-							<li data-content="auto-tools" id="cat-nav-two">Auto Tools &amp; Jacks</li>
-							<li data-content="compaction" id="cat-nav-three">Compaction</li>
-							<li data-content="breakers" id="cat-nav-four">Breakers &amp; Hammer Drills</li>
-							<li data-content="concrete" id="cat-nav-five">Concrete</li>
-							<li data-content="contractors" id="cat-nav-six">Contractors</li>
-							<li data-content="generators" id="cat-nav-seven">Generators</li>
-							<li data-content="heavy-equipment" id="cat-nav-eight">Heavy Equipment</li>
-							<li data-content="interior-floor" id="cat-nav-nine">Interior &amp; Floor</li>
-							<li data-content="ladders-lifts" id="cat-nav-ten">Ladders &amp; Lifts</li>
-							<li data-content="lawn-garden" id="cat-nav-eleven">Lawn &amp; Garden</li>
-							<li data-content="misc" id="cat-nav-twelve">Miscellanous</li>
-							<li data-content="nailers-staplers" id="cat-nav-thirteen">Nailers &amp; Staplers</li>
-							<li data-content="plumbing" id="cat-nav-fourteen">Plumbing</li>
-							<li data-content="pressure-washers" id="cat-nav-fifteen">Pressure Washers</li>
-							<li data-content="vacuums" id="cat-nav-sixteen">Vacuums</li>
-							<li data-content="water-pumps" id="cat-nav-seventeen">Water Pumps</li>
+							<li data-content="auto-tools">Auto Tools &amp; Jacks</li>
+							<li data-content="compaction">Compaction</li>
+							<li data-content="breakers">Breakers &amp; Hammer Drills</li>
+							<li data-content="concrete">Concrete</li>
+							<li data-content="contractors">Contractors</li>
+							<li data-content="generators">Generators</li>
+							<li data-content="heavy-equipment">Heavy Equipment</li>
+							<li data-content="interior-floor">Interior &amp; Floor</li>
+							<li data-content="ladders-lifts">Ladders &amp; Lifts</li>
+							<li data-content="lawn-garden">Lawn &amp; Garden</li>
+							<li data-content="misc">Miscellanous</li>
+							<li data-content="nailers-staplers">Nailers &amp; Staplers</li>
+							<li data-content="plumbing">Plumbing</li>
+							<li data-content="pressure-washers">Pressure Washers</li>
+							<li data-content="vacuums">Vacuums</li>
+							<li data-content="water-pumps">Water Pumps</li>
 				  	</ul>
 				</nav>
 
 				<div class="rental-rates-table" id="content-air-compressors">
-					<h2>Air Compressors</h2>
+					<h2 class="center-text">Air Compressors</h2>
 					<table>
 						<tr>
 							<th class="prod-desc">Product Description</th>
@@ -1274,7 +1274,7 @@
 		</div>	<!-- closing container-container div -->
 	</div> <!-- closing container div -->
 
-		<div class="form-container clearfix">
+		<div class="form-container white-background-blue-font clearfix">
 			<h2>Contact Us</h2>
 			<div class="form-close-button"><i class="fa fa-times fa-2x"></i></div>
 			<form action="#" method="post" id="contact-form">
@@ -1296,7 +1296,7 @@
 							<textarea id="inquiry" cols="47" rows="8" placeholder="Enter Inquiry Here..."></textarea>
 						</li>
 						<li>
-							<button type="submit" id="submit-form">SUBMIT</button><div class="missing-fields-message">* Required Field</div>
+							<button type="submit" class="dark-background-white-font" id="submit-form">SUBMIT</button><div class="missing-fields-message">* Required Field</div>
 						</li>
 					</ul>
 			</form>
@@ -1304,11 +1304,11 @@
 
 		<div class="overlay"></div>
 
-		<footer class="dark-background-white-font">
+		<footer class="dark-background-white-font font-face-font">
 			<p id="footer-date"></p>
 		</footer>
-		<script src="jquery-2.1.4.min.js"></script>
-   		<script src="wr.js"></script>
+		<script src="javascript/jquery-2.1.4.min.js"></script>
+   		<script src="javascript/wr.js"></script>
 
 
 	</body>
