@@ -112,11 +112,10 @@ header {
 .toro-content {
 	margin: 0 auto;
 }
-
 .rental-content {
 	position: relative;
 	margin: 0 auto;
-	width: 20rem;
+	width: 19rem;
 	height: 38rem;
 }
 .stihl-products-container {
@@ -187,7 +186,7 @@ header {
 	border-bottom: 1px solid #204288;
 }
 .rental-rates-table {
-	width: 20rem;
+	width: 19.25rem;
 	position: absolute;
 	top: 2rem;
 	left: 0;
@@ -198,12 +197,12 @@ header {
 	text-transform: uppercase;
 }
 .prod-desc {
-	width: 9.25rem;
+	width: 9.2rem;
 	text-align: left;
 }
 .rental-rates-table th,
 .rental-rates-table td {
-	padding: .1rem .2rem;
+	padding: .1rem .15rem;
 }
 .back-to-rentals-menu {
 	visibility: hidden;
