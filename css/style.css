@@ -458,16 +458,17 @@ footer {
 	}
 	.form-close-button:hover {
 		color: #00aa00;
-		  -webkit-transform: rotate(60deg); /* Ch <36, Saf 5.1+ */
-	      -ms-transform: rotate(60deg); /* IE 9 */
-	          transform: rotate(90deg); /* W3C, IE 10, Fx 16+, Op 12.1+ */
+		  -webkit-transform: rotate(60deg);
+	      -ms-transform: rotate(60deg);
+	          transform: rotate(90deg);
 	}
 	form ul {
 	    margin: 0 auto;
 	    font-size: 0.85rem;
+	    padding-right: 2.5rem;
 	}
 	form li {
-	    padding: 0.25rem 0;
+	    padding: 0.25rem;
 	    display: block;
 	    list-style: none;
 	    margin: 0.75rem 0 0 0;
@@ -636,8 +637,21 @@ footer {
 		width: 200px;
 		height: 180px;
 	}
+	.willoe-background-image {
+		background: url('../images/willoe-background-image.jpg') no-repeat;
+		background-size: 100%;
+		width: 80%;
+		height: 200px;
+		float: left;
+		color: #fff;
+		position: relative;
+	}
+	.willoe-background-image p {
+		position: absolute;
+		top: 2.5rem;
+		left: 2rem;
+	}
 }
-
 
 
 
