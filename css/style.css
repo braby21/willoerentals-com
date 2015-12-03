@@ -448,7 +448,7 @@ footer {
 		padding-left: 2.5rem;
 	}
 	.form-close-button {
-		position: fixed;
+		position: relative;
 		top: 2rem;
 		right: 4rem;
 		cursor: pointer;
