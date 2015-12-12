@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>Willoe Rentals | Equipment Rentals | Stratford, Ontario</title>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="shortcut icon" type="image/jpg" href="images/willoe-shortcut-icon.jpg">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
@@ -27,36 +28,63 @@
 					<li><a href="toro.html">TORO</a></li>
 					<li><a href="rentals.html">RENTALS</a></li>
 					<li><a href="services.html">SERVICES</a></li>
-					<li><a href="contact.html" id="form-launch">CONTACT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
 			  	</ul>
 			</nav>
 
 		<div class="content-container clearfix">
+
+			<div class="content form-content white-background-blue-font clearfix">
+				<h1 class="center-text">Contact Us</h1>
+				<div class="contact-form-container">
+					<form action="#" method="post" id="contact-form">
+							<ul>
+								<li>
+									<label for="name">Name <span class="required"> *</span></label>
+									<input type="text" id="name" size="50" placeholder="First Name...">
+								</li>
+								<li>
+									<label for="email">Email <span class="required"> *</span></label>
+									<input type="text" id="email" size="50" placeholder="Email Address..."/>
+								</li>
+								<li>
+									<label for="phone">Phone <span class="required"> *</span></label>
+									<input type="text" id="phone" size="50" placeholder="Phone Number..."/>
+								</li>
+								<li>
+									<label for="inquiry">Inquiry <span class="required"> *</span></label>
+									<textarea id="inquiry" cols="48" rows="8" placeholder="Enter Inquiry Here..."></textarea>
+								</li>
+								<li>
+									<button type="submit" class="dark-background-white-font" id="submit-form">SEND</button>
+									<span class="missing-fields-message">* Required Field</span>
+								</li>
+							</ul>
+					</form>
+				</div>
+			</div>
 		
-			<aside class="dark-font clearfix">
-				<div class="contact-info centered">
-					<h3>Willoe Rentals</h3>
-					<p>521 Erie Street<br /> 
-					Stratford, ON N5A2N7<br /> 
-					<i class="fa fa-phone"></i> (519) 271-5155<br /> 
-					<i class="fa fa-fax"></i> (519) 271-6155<br /> 
-					<i class="fa fa-envelope-o"></i> <a href="mailto:willoerentals@bellnet.ca" class="dark-font">willoerentals@bellnet.ca</a></p>
-					<h3>Hours Of Operation</h3>
-					<p>Mon-Fri: 7:30am - 5pm<br />
-					Saturday: 8am - 12pm<br />
-					Sunday: Closed</p>
-					<p><a href="https://www.facebook.com/WilloeRentals" target="_blank"><img src="images/find-us-on-facebook.png" alt="Find us on Facebook" /></a></p>
-				</div>
-				<div class="aside-map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.8557969598305!2d-80.9951183847877!3d43.35912687913244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eb1f8aa32159f%3A0x42c46c58e1cafcb6!2s521+Erie+St%2C+Stratford%2C+ON+N5A+2N7!5e0!3m2!1sen!2sca!4v1445818236509"></iframe>
-				</div>
+			<aside class="index-contact-aside dark-font clearfix">
+				<p><i class="fa fa-map-marker"></i> 521 Erie Street<br /> 
+				Stratford, ON N5A2N7</p>
+				<i class="fa fa-phone small-indent"></i><a href="tel:519.271.5155" class="dark-font">519.271.5155</a><br />
+				<i class="fa fa-envelope small-indent"></i><a href="mailto:willoerentals@bellnet.ca" class="dark-font">willoerentals@bellnet.ca</a>
+				<p>
+					<ul>
+						<li><span class-"med-indent">Mon-Fri</span> 7:30am - 5:00pm</li>
+						<li><span class-"med-indent">Saturday</span> 8:00am - 12:00pm</li>
+						<li><span class-"med-indent">Sunday</span> Closed</li>
+					</ul>
+				</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.8557969598305!2d-80.9951183847877!3d43.35912687913244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eb1f8aa32159f%3A0x42c46c58e1cafcb6!2s521+Erie+St%2C+Stratford%2C+ON+N5A+2N7!5e0!3m2!1sen!2sca!4v1445818236509">
+					</iframe>
+				<p><a href="https://www.google.ca/maps/dir/Current+Location/521%20Erie%20St,%20Stratford,%20Ontario,%20Canada,%20N5A%202N7" target="_blank" class="dark-font">Get Directions</a></p>
+				<p><a href="https://www.facebook.com/WilloeRentals" target="_blank"><img src="images/find-us-on-facebook.png" alt="Find us on Facebook" /></a></p>
+				
 			</aside>
-				<div class="cra-secondary-container">
-					<img src="images/CRA-logo.jpg" alt="Willoe Rentals is a Proud member of the Canadian Rental Association!" class="cra-logo" />
-				</div>
 		</div>	<!-- closing container-container div -->
 
-		<footer class="dark-background-white-font font-face-font">
+		<footer class="dark-background-white-font">
 			<p id="footer-date"></p>
 		</footer>
 		<script src="javascript/jquery-2.1.4.min.js"></script>

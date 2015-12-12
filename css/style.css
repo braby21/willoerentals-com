@@ -1,14 +1,15 @@
 /*
-CSS LEGEND
+CSS LEGEND NEED TO EDIT
 ==========
 1) #OOCSS Classes
 2) #Mobile & Basic Styling
 3) #MediaQuery 480px
-4) #MediaQuery 720px
+4) #MediaQuery 768px
 5) #slider
-6) #form-container
 7) #MediaQuery 1024px
 */
+
+
 
 /* #OOCSS Classes */
 .currency {	
@@ -17,59 +18,58 @@ CSS LEGEND
 .center-text {
 	text-align: center;
 }
-.indent {
+.text-indent {
 	text-indent: 0.5rem;
 }
 .small-indent {
 	min-width: 20px;
     display: inline-block;
 }
+.med-indent {
+    min-width: 5rem;
+    display: inline-block;
+}
 .italicize {
 	font-style: italic;
-}
-@font-face {
-    font-family: 'aleoregular';
-    src: url('fonts/aleo-regular-webfont.eot');
-    src: url('fonts/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/aleo-regular-webfont.woff') format('woff'),
-         url('fonts/aleo-regular-webfont.ttf') format('truetype'),
-         url('fonts/aleo-regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-.font-face-font {
-	font-family: 'aleoregular';
 }
 .dark-background-white-font {
 	background-color: #204288;
 	color: #fff;
 }
-.dark-font {
-	color: #204288;
-}
 .white-background-blue-font {
 	background-color: #fff;
 	color: #204288;
-}	
-
+}
+.dark-font {
+	color: #204288;
+}
+.green-font {
+	color: #00aa00;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* #Mobile & Basic Styling */
 
+/* Global Styling */
+
 body {
 	font-family: Helvetica, Verdana, Arial, sans-serif;
-	position: relative;
+	width: 100%;
+	margin: 0;
+	/*should I put blue font in here?*/
 }
+
+/* #HEADER */
+
 header {
 	max-width: 1200px;
 }
-.container {
-	width: 100%;
-}
-.content-container {
-	width: 95%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 2% 0;
+h1 {
+	font-size: 1.75rem;
 }
 .willoe-header-container {
 	width: 240px;
@@ -79,18 +79,12 @@ header {
 .cra-header-container {
 	display: none;
 }
-.cra-secondary-container {
-	width: 120px;
-	margin: 0 auto;
+header img {
+	max-width: 100%;
 }
-.cra-logo {
-	width: 120px;
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
+/* #NAV */
+
 .main-nav  {
 	width: 100%;
 }
@@ -110,10 +104,17 @@ header {
     text-decoration: none;
     font-size: 1rem;
 }
+
+/* #CONTENT CONTAINERS */
+
+.content-container {
+	width: 95%;
+	max-width: 1200px;
+	margin: 1.5rem auto;
+}
 .content,
-.stihl-content,
-.toro-content {
-	margin: 0 auto;
+.sales-services-content {
+	margin: 1rem 0 2rem;
 }
 .rental-content {
 	position: relative;
@@ -121,44 +122,110 @@ header {
 	width: 19rem;
 	height: 38rem;
 }
+
+/*#INDEX CONTENT*/
+
+.content-stihl-logo {
+	height: 60px;
+	padding: 1rem;
+}
+.content-toro-logo {
+	height: 62px;
+	padding: 1rem;
+}
+.slider-container {
+	visibility: visible;
+	display: inline;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	height: 320px;
+	overflow: hidden;
+}
+#slider {
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.slides {
+	display: block;
+	width: 5184px;
+	height: 320px;
+	margin: 0 0 0 -680px;
+	padding: 0;
+}
+.slide {
+	float: left;
+	list-style: none;
+	width: 576px;
+	height: 320px;
+}
+.index-stihl-product-image {
+	width: 400px;
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+.index-toro-product-image {
+	width: 320px;
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+/*#STIHL CONTENT*/
+
 .stihl-products-container {
-	width: 220px;
+	width: 100%;
+	margin: 0 auto;
+}
+.stihl-product-categories-container {
+	width: 100%;
+	margin: 0 auto;
+}
+.stihl-product-categories-container a {
+	text-decoration: none;
+	color: rgb(243,122,31);
+}
+.product-categories {
+	width: 70%;
+	margin: 0 auto;
+}
+.product-info-container {
+	width: 100%;
 	margin: 3rem auto;
+}
+.product-info-container img {
+	max-width: 100%;
 }
 .stihl-h1-logo {
 	width: 75px;
 	vertical-align: bottom;
 }
+.fall-flyer-banner-left, 
+.fall-flyer-banner-right {
+	display: none;
+}
+
+/* #TORO CONTENT */
+
+.toro-product-container {
+	margin: 0 auto;
+	width: 20rem;
+}
+.toro-product-info-one,
+.toro-product-info-two {
+	margin-top: 3rem;
+	max-width: 100%;
+}
 .toro-h1-logo {
 	width: 60px;
 	vertical-align: bottom;
 }
-.fall-flyer-banner{
-	display: none;
-}
-.product-categories {
-	width: 220px;
-}
-.product-info-container {
-	width: 220px;
-	height: 160px;
-}
-.product-info-container img {
-	height: 80px;
-}
-.stihl-products-button,
-.stihl-products-button img {
-	display: none;
-	float: none;
-}
-.toro-product-container,
-.toro-product-info-one,
-.toro-product-info-two {
-	width: 300px;
-}
 .toro-product-container ul {
 	text-align: left;
-	padding-left: 1rem;
+	padding-left: 2rem;
 }
 .toro-product-container li {
 	font-size: .75rem;
@@ -166,6 +233,9 @@ header {
 .toro-product-container img {
 	width: 240px;
 }
+
+/* #RENTAL CONTENT */
+
 .rental-category-hide {
 	visibility: hidden;
 }
@@ -214,59 +284,103 @@ header {
 	left: .75rem;
 	font-size: 1.25rem;
 }
-.content-stihl-logo {
-	height: 60px;
-	padding: 1rem;
+
+/* #SERVICES CONTENT */
+
+.willoe-background-image {
+	width: 100%;
 }
-.content-toro-logo {
-	height: 62px;
-	padding: 1rem;
-}
+
+/* #ASIDE */
+
 aside {
-	width: 200px;
-	margin: 1rem; auto;
-	font-size: .9rem;
+	display: none;
 }
-aside span {
-    min-width: 70px;
-    display: inline-block;
+aside.index-contact-aside {
+	margin: 1rem auto;
+	width: 14rem;
+	display: block;
+	font-size: 1rem;
 }
 aside ul {
-	margin: 0;
-    padding: 0;
+    padding-left: 0;
     list-style:none;
 }
-aside li {
-	text-align: left;
-}
-aside a {
-
-}
-aside h3 {
-	margin-bottom: 0;
-}
-aside p {
-	margin-top: 0.5rem;
-}
-aside img {
-	width: 120px;
-	margin: 1rem 0;
-}
 iframe {
+	margin-top: 1rem;
 	border: none;
-	margin: 0;
-	padding: 0;
-	width: 200px;
+	width: 100%;
 	height: 180px;
 }
+.fb-img-container {
+	width: 120px;
+	margin: 2rem 0;
+}
+.cra-secondary-container {
+	width: 140px;
+	margin: 0 auto;
+}
+.cra-secondary-container img,
+.fb-img-container img {
+	max-width: 100%
+}
+
+/* #FOOTER */
+
 footer {
 	padding: 1% 4%;
 }
-.slider-container {
+
+
+/* #CONTACT */
+
+.contact-form-container {
+	width: 365px;
+	margin: 0 auto;
 	display: none;
 }
-.form-container {
-	display: none;
+form ul {
+    font-size: 0.85rem;
+    padding: 1rem;
+}
+form li {
+    padding: 0.25rem;
+    list-style: none;
+    margin-bottom: 0.75rem;
+}
+form label {
+    margin: 0 0 3px 0;
+    padding: 0;
+    font-weight: bold;
+}
+form input,
+textarea {
+    border: 1px solid #bebebe;
+    padding: 0.5rem;
+    margin: 0;
+}
+form input:hover,
+textarea:hover {
+    border: 1px solid #00aa00;
+}
+form button {
+	font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+form button:hover{
+    background: #00aa00;
+}
+form .required{
+    color: red;
+    font-size: .75rem;
+}
+form .missing-fields-message {
+	color: red;
+	float: right;
+    font-size: .75rem;
+    padding: 0.5rem;
+    visibility: hidden;
 }
 
 
@@ -274,9 +388,12 @@ footer {
 
 @media all and (min-width: 480px) {
 	
+	/* #HEADER */
+
 	header {
 		width: 95%;
 		margin: 0 auto;
+		/*border: 1px solid black;*/
 	}
 	.willoe-header-container {
 		float: left;
@@ -290,26 +407,42 @@ footer {
 		display: inline;
 		margin: 1rem 0;
 	}
-	.cra-secondary-container {
-		display: none;
+
+	/* #NAV */
+
+	.main-nav a {
+	    width: 4.5rem;
+	    font-size: 0.8rem;
 	}
-	.content-container {
-		width: 95%;
+
+	/* #CONTENT CONTAINERS */
+
+	.content-container, {
+		width: 90%;
 	}
 	.rental-content {
 		width: 28rem;
 		height: 50rem;
 	}
-	.stihl-products-container {
-		width: 440px;
+
+	/* #INDEX CONTENT */	
+
+	.slider-container {
+		width: 360px;
 	}
+	#slider {
+		width: 360px;
+	}
+
+	/* #STIHL CONTENT */
+
 	.product-categories {
+		width: 50%;
 		float: left;
 	}
-	.main-nav a {
-	    width: 4.5rem;
-	    font-size: 0.8rem;
-	}
+
+	/* #RENTAL CONTENT */
+	
 	.rental-side-nav {
 		left: 20%;
 	}
@@ -327,12 +460,30 @@ footer {
 	.back-to-rentals-menu:hover {
 		cursor: pointer;
 	}
+
+	/* #ASIDE */
+
+	aside.index-contact-aside {
+		float: none;
+	}
+	.cra-secondary-container {
+		display: none;
+	}
+
 }
 
-/* #MediaQuery 720px */
+/* #MediaQuery 768px */
 
-@media all and (min-width: 720px) {
+@media all and (min-width: 768px) {
 	
+	/* #HEADER */
+
+/*	header {
+		border: 1px solid green;
+	}*/
+
+	/* #NAV */
+
 	.main-nav a {
 	    width: 7rem;
 	    font-size: 1rem;
@@ -341,7 +492,16 @@ footer {
 		background-color: #00aa00;
 		text-decoration: underline;
 	}
+
+	/* #CONTENT CONTAINERS */
+
 	.content {
+		width: 65%;
+		float: left;
+		margin: 0 5% 0 0;
+	}
+	.sales-services-content {
+		width: 90%;
 		margin: 0 auto;
 	}
 	.rental-content {
@@ -349,20 +509,57 @@ footer {
 		width: 43rem;
 		height: 42rem;
 	}
-	.product-info-container:hover {
-		text-decoration: underline;
-		color: rgb(243,122,31);
-	}
-	.toro-product-container{
-		width: 600px;
-		height: 400px;
-	}		
-	.toro-product-info-one {
+
+	/* #STIHL CONTENT */
+
+	.stihl-product-categories-container {
+ 		width: calc(100% - 200px);
 		float: left;
 	}
-	.toro-product-info-two {
-		float: right;
+	.product-categories {
+		width: 50%;
 	}
+	.fall-flyer-banner-left {
+		width: 100px;
+		float: left;
+		display: inline-block;
+	}
+	.fall-flyer-banner-right {
+		width: 100px;
+		float: left;
+		display: inline-block;
+	}
+	.fall-flyer-banner-right img,
+	.fall-flyer-banner-left img {
+		max-width: 100%;
+	}
+	.product-info-container {
+		border: 1px solid #fff;
+		width: 75%;
+	}
+	.product-info-container:hover {
+		border: 0.1rem solid rgb(243,122,31);
+	}
+
+	/* #TORO CONTENT */
+
+	.toro-product-container {
+		width: 90%;
+		height: 25rem;
+		margin: 0;
+	}		
+	.toro-product-info-one {
+		margin: 0;
+		float: left;
+		width: 50%
+	}
+	.toro-product-info-two {
+		margin: 0;
+		float: right;
+		width: 50%
+	}
+
+	/* #RENTAL CONENT */
 	.rental-side-nav {
 		width: 13rem;
 		left: 0;
@@ -390,146 +587,24 @@ footer {
 	.rental-rates-table td {
 		padding: .1rem .4rem;
 	}
-	aside {
-		margin: 0 auto;
-	}
 
-	/* #slider */
+	/* #CONTACT CONTENT */
 
-	.slider-container {
-		visibility: visible;
-		display: inline;
-		position: relative;
-		width: 100%;
-		min-width: 576px;
-		margin: 0 auto;
-		height: 320px;
-	}
-	#slider {
-		width: 576px;
-		height: 320px;
-		overflow: hidden;
-		margin: 0 auto;
-	}
-	.slides {
+	.contact-form-container {
 		display: block;
-		width: 5184px;
-		height: 320px;
-		margin: 0 0 0 -576px;
-		padding: 0;
 	}
-	.slide {
-		float: left;
-		list-style: none;
-		width: 576px;
-		height: 320px;
-	}
-	.index-product-image {
-		width: 360px;
-	  	position: relative;
-	  	top: 50%;
-	  	transform: translateY(-50%);
-	}
-	.index-product-image-medsize {
-		width: 280px;
-	  	position: relative;
-	  	top: 50%;
-	  	transform: translateY(-50%);
-	}
-	.index-product-image-smallsize {
-		width: 200px;
-	  	position: relative;
-	  	top: 50%;
-	  	transform: translateY(-50%);
+	.content.form-content {
+		display: block;
 	}
 
-	/* #form-container */
+	/* #ASIDE */
 
-	.form-container {
-		position: absolute;
-		top: 5rem;
-		left: 50%;
-	    transform: translate(-50%, 0);
-		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		border-radius: 0.5rem;
-		padding: 0.75rem;
-		z-index: 100;
-	}
-	.form-container h2 {
-		padding-left: 2.5rem;
-	}
-	.form-close-button {
-		position: fixed;
-		top: 2rem;
-		right: 4rem;
-		cursor: pointer;
-		transition: transform 0.3s ease-in;
-		padding: 0;
-	}
-	.form-close-button:hover {
-		color: #00aa00;
-		  -webkit-transform: rotate(60deg);
-	      -ms-transform: rotate(60deg);
-	          transform: rotate(90deg);
-	}
-	form ul {
-	    margin: 0 auto;
-	    font-size: 0.85rem;
-	    padding-right: 2.5rem;
-	}
-	form li {
-	    padding: 0.25rem;
-	    display: block;
-	    list-style: none;
-	    margin: 0.75rem 0 0 0;
-	}
-	form label {
-	    margin: 0 0 3px 0;
-	    padding: 0;
-	    display:block;
-	    font-weight: bold;
-	    width: 100%;
-	}
-	form input,
-	textarea {
-	    border: 1px solid #bebebe;
-	    padding: 0.5rem;
-	    margin: 0;
-	}
-	form input:hover,
-	textarea:hover {
-	    border: 1px solid #00aa00;
-	}
-	form button {
-	    padding: 0.5rem 1rem;
-	    border: none;
-	}
-	form button:hover{
-	    background: #00aa00;
-	}
-	form .required{
-	    color: red;
-	    font-size: .75rem;
-	}
-	form .missing-fields-message {
-		color: red;
-	    font-size: .75rem;
-	    float: right;
-	    padding: 1rem 3.5rem;
-	    visibility: hidden;
-	}
-
-	/* #overlay */
-	.overlay {
-		opacity: 0.75;
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: black;
-		height: 100%;
-		width: 100%;
-		z-index: 1;
-		display: none;
+	aside,
+	aside.index-contact-aside {
+		float: right;
+		width: 13rem;
+		margin: 1rem 0;
+		font-size: .9rem;
 	}
 
 }
@@ -540,9 +615,18 @@ footer {
 
 @media all and (min-width: 1024px) {
 
-	.content {
+	/* #HEADER */
+
+	/*header {
+		border: 1px solid blue;
+	}*/
+
+	/* #CONTENT CONTAINERS */
+
+	.content,
+	.sales-services-content {
 		width: 70%;
-		min-width: 680px;
+		min-height: calc(100vh - 170px);
 		float: left;
 	}
 	.rental-content {
@@ -550,20 +634,9 @@ footer {
 		height: 42rem;
 		float: left;
 	}
-	.stihl-products-container {
-		width: 680px;
-	}
-	.fall-flyer-banner{
-		width: 120px;
-		float: left;
-		display: inline-block;
-	}
-	.stihl-products-button,
-	.stihl-products-button img {
-		display: block;
-		width: 120px;
-		float: left;
-	}	
+
+	/* #RENTAL CONTENT */
+
 	.rental-side-nav {
 		width: 14rem;
 		font-size: 0.8rem;
@@ -586,23 +659,13 @@ footer {
 	.rental-rates-table td {
 		padding: .1rem .5rem;
 	}
-	.willoe-background-image {
-		background: url('../images/willoe-background-image.jpg') no-repeat;
-		background-size: 100%;
-		width: 80%;
-		height: 200px;
-		float: left;
-		color: #fff;
-		position: relative;
-	}
-	.willoe-background-image p {
-		position: absolute;
-		top: 2.5rem;
-		left: 2rem;
-	}
+
+	/* #ASIDE */
+
 	aside {
-		float: right;
+		display: block;
 	}
+
 }
 
 
