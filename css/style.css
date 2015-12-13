@@ -508,7 +508,7 @@ form .missing-fields-message {
 		max-width: 100%;
 	}
 	.product-info-container {
-		border: 1px solid #fff;
+		border: 0.1rem solid #fff;
 		width: 75%;
 	}
 	.product-info-container:hover {
