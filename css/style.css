@@ -265,7 +265,7 @@ header img {
 }
 .rental-rates-table th,
 .rental-rates-table td {
-	padding: .15rem .25rem;
+	padding: .15rem .15rem;
 	border: 1px solid;
 }
 .back-to-rentals-menu {
@@ -473,13 +473,15 @@ form .missing-fields-message {
 	/* #CONTENT CONTAINERS */
 
 	.content {
-		width: 65%;
+		width: 60%;
 		float: left;
 		margin: 0 5% 0 0;
+		min-height: 73vh;
 	}
 	.sales-service-rentals-content {
 		width: 95%;
 		margin: 0 auto;
+		min-height: 73vh;
 	}
 
 	/* #STIHL CONTENT */
@@ -588,18 +590,17 @@ form .missing-fields-message {
 
 	.content,
 	.sales-service-rentals-content {
-		width: 75%;
-		min-height: calc(100vh - 170px); /*do I need browser fixes?*/
+		width: 70%;
 		float: left;
 	}
 
 	/* #RENTAL CONTENT */
 
 	.rental-side-nav {
-		margin-left: 1.5rem;
+		margin-left: 1rem;
 	}
 	.rental-rates-table {
-		margin-left: 3rem;
+		margin-left: 1.5rem;
 	}
 	
 	/* #ASIDE */
