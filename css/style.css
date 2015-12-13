@@ -9,8 +9,6 @@ CSS LEGEND NEED TO EDIT
 7) #MediaQuery 1024px
 */
 
-
-
 /* #OOCSS Classes */
 .currency {	
 	text-align: right;
@@ -44,7 +42,7 @@ CSS LEGEND NEED TO EDIT
 	color: #204288;
 }
 .green-font {
-	color: #00aa00;
+	color: #009900;
 }
 .clearfix:after {
     content: "";
@@ -116,12 +114,12 @@ header img {
 .sales-services-content {
 	margin: 1rem 0 2rem;
 }
-.rental-content {
+/*.rental-content {
 	position: relative;
 	margin: 0 auto;
 	width: 19rem;
 	height: 38rem;
-}
+}*/
 
 /*#INDEX CONTENT*/
 
@@ -237,13 +235,11 @@ header img {
 /* #RENTAL CONTENT */
 
 .rental-category-hide {
-	visibility: hidden;
+	display: none;
 }
 .rental-side-nav {
 	width: 18rem;
-	position: absolute;
-	top: 0;
-	left: 0.25rem;
+	float: left;
 	font-size: 1rem;
 	text-transform: uppercase;
 }
@@ -258,13 +254,17 @@ header img {
 	padding: 0.2rem 0;
 	border-bottom: 1px solid #204288;
 }
+.rental-side-nav a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #204288;
+}
 .rental-rates-table {
 	width: 19.25rem;
-	position: absolute;
-	top: 2rem;
-	left: 0;
+	float: left;
 	font-size: 0.65rem;
-	visibility: hidden;
+	display: none;
 }
 .rental-rates-table h2 {
 	text-transform: uppercase;
@@ -278,10 +278,10 @@ header img {
 	padding: .1rem .15rem;
 }
 .back-to-rentals-menu {
-	visibility: hidden;
-	position: absolute;
+	display: none;
+/*	position: absolute;
 	top: .75rem;
-	left: .75rem;
+	left: .75rem;*/
 	font-size: 1.25rem;
 }
 
@@ -335,7 +335,8 @@ footer {
 /* #CONTACT */
 
 .contact-form-container {
-	width: 365px;
+	width: 70%;
+	max-width: 21rem;
 	margin: 0 auto;
 	display: none;
 }
@@ -358,10 +359,11 @@ textarea {
     border: 1px solid #bebebe;
     padding: 0.5rem;
     margin: 0;
+    width: 100%;
 }
 form input:hover,
 textarea:hover {
-    border: 1px solid #00aa00;
+    border: 1px solid #009900;
 }
 form button {
 	font-size: 1rem;
@@ -369,7 +371,7 @@ form button {
     border: none;
 }
 form button:hover{
-    background: #00aa00;
+    background: #009900;
 }
 form .required{
     color: red;
@@ -417,13 +419,13 @@ form .missing-fields-message {
 
 	/* #CONTENT CONTAINERS */
 
-	.content-container, {
+	.content-container {
 		width: 90%;
 	}
-	.rental-content {
+/*	.rental-content {
 		width: 28rem;
 		height: 50rem;
-	}
+	}*/
 
 	/* #INDEX CONTENT */	
 
@@ -443,9 +445,9 @@ form .missing-fields-message {
 
 	/* #RENTAL CONTENT */
 	
-	.rental-side-nav {
+	/*.rental-side-nav {
 		left: 20%;
-	}
+	}*/
 	.rental-rates-table {
 		width: 28rem;
 		font-size: 0.9rem;
@@ -457,9 +459,9 @@ form .missing-fields-message {
 	.rental-rates-table td {
 		padding: .1rem .3rem;
 	}
-	.back-to-rentals-menu:hover {
+/*	.back-to-rentals-menu:hover {
 		cursor: pointer;
-	}
+	}*/
 
 	/* #ASIDE */
 
@@ -488,8 +490,8 @@ form .missing-fields-message {
 	    width: 7rem;
 	    font-size: 1rem;
 	}
-	li a:hover {
-		background-color: #00aa00;
+	.main-nav li a:hover {
+		background-color: #009900;
 		text-decoration: underline;
 	}
 
@@ -513,7 +515,7 @@ form .missing-fields-message {
 	/* #STIHL CONTENT */
 
 	.stihl-product-categories-container {
- 		width: calc(100% - 200px);
+ 		width: calc(100% - 200px);	/*do I need browser fixes?*/
 		float: left;
 	}
 	.product-categories {
@@ -562,12 +564,14 @@ form .missing-fields-message {
 	/* #RENTAL CONENT */
 	.rental-side-nav {
 		width: 13rem;
-		left: 0;
+		float: left;
+		/*left: 0;*/
 		font-size: 0.75rem;
 	}
-	.rental-side-nav li:hover {
+	.rental-side-nav li a:hover {
 		text-decoration: underline;
 		cursor: pointer;
+		color: #009900;
 	}
 	.rental-side-nav h1 {
 		font-size: 1.05rem;
@@ -576,9 +580,10 @@ form .missing-fields-message {
 		visibility: visible;
 	}
 	.rental-rates-table {
-		top: 0;
-		left: 14rem;
+		/*top: 0;
+		left: 14rem;*/
 		font-size: 0.75rem;
+		float: left;
 	}
 	.prod-desc {
 		width: 11rem;
@@ -626,14 +631,14 @@ form .missing-fields-message {
 	.content,
 	.sales-services-content {
 		width: 70%;
-		min-height: calc(100vh - 170px);
+		min-height: calc(100vh - 170px); /*do I need browser fixes?*/
 		float: left;
 	}
-	.rental-content {
+/*	.rental-content {
 		width: 44rem;
 		height: 42rem;
 		float: left;
-	}
+	}*/
 
 	/* #RENTAL CONTENT */
 
@@ -641,15 +646,12 @@ form .missing-fields-message {
 		width: 14rem;
 		font-size: 0.8rem;
 	}
-	.rental-side-nav li:hover {
-		text-decoration: underline;
-	}
 	.rental-side-nav h1 {
 		font-size: 1.25rem;
 	}
 	.rental-rates-table {
 		width: 28rem;
-		left: 16rem;
+		/*left: 16rem;*/
 		font-size: 0.8rem;
 	}
 	.prod-desc {
