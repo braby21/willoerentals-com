@@ -111,15 +111,9 @@ header img {
 	margin: 1.5rem auto;
 }
 .content,
-.sales-services-content {
+.sales-service-rentals-content {
 	margin: 1rem 0 2rem;
 }
-/*.rental-content {
-	position: relative;
-	margin: 0 auto;
-	width: 19rem;
-	height: 38rem;
-}*/
 
 /*#INDEX CONTENT*/
 
@@ -239,12 +233,12 @@ header img {
 }
 .rental-side-nav {
 	width: 18rem;
-	float: left;
-	font-size: 1rem;
+	margin: 1rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
 }
 .rental-side-nav h1 {
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 }
 .rental-side-nav ul {
 	list-style: none;
@@ -261,28 +255,23 @@ header img {
 	color: #204288;
 }
 .rental-rates-table {
-	width: 19.25rem;
-	float: left;
-	font-size: 0.65rem;
 	display: none;
+	float: left;
+	font-size: 0.75rem;
 }
 .rental-rates-table h2 {
 	text-transform: uppercase;
-}
-.prod-desc {
-	width: 9.2rem;
-	text-align: left;
+	margin-top: 0.75rem;
 }
 .rental-rates-table th,
 .rental-rates-table td {
-	padding: .1rem .15rem;
+	padding: .15rem .25rem;
+	border: 1px solid;
 }
 .back-to-rentals-menu {
 	display: none;
-/*	position: absolute;
-	top: .75rem;
-	left: .75rem;*/
 	font-size: 1.25rem;
+	margin: 1rem 0 0 1rem;
 }
 
 /* #SERVICES CONTENT */
@@ -422,10 +411,6 @@ form .missing-fields-message {
 	.content-container {
 		width: 90%;
 	}
-/*	.rental-content {
-		width: 28rem;
-		height: 50rem;
-	}*/
 
 	/* #INDEX CONTENT */	
 
@@ -445,23 +430,10 @@ form .missing-fields-message {
 
 	/* #RENTAL CONTENT */
 	
-	/*.rental-side-nav {
-		left: 20%;
-	}*/
 	.rental-rates-table {
-		width: 28rem;
-		font-size: 0.9rem;
+		margin-left: 3rem;
+		font-size: 0.8rem;
 	}
-	.prod-desc {
-		width: 13rem;
-	}
-	.rental-rates-table th,
-	.rental-rates-table td {
-		padding: .1rem .3rem;
-	}
-/*	.back-to-rentals-menu:hover {
-		cursor: pointer;
-	}*/
 
 	/* #ASIDE */
 
@@ -482,8 +454,8 @@ form .missing-fields-message {
 
 /*	header {
 		border: 1px solid green;
-	}*/
-
+	}
+*/
 	/* #NAV */
 
 	.main-nav a {
@@ -502,14 +474,9 @@ form .missing-fields-message {
 		float: left;
 		margin: 0 5% 0 0;
 	}
-	.sales-services-content {
-		width: 90%;
+	.sales-service-rentals-content {
+		width: 95%;
 		margin: 0 auto;
-	}
-	.rental-content {
-		margin: 0 auto;
-		width: 43rem;
-		height: 42rem;
 	}
 
 	/* #STIHL CONTENT */
@@ -561,12 +528,12 @@ form .missing-fields-message {
 		width: 50%
 	}
 
-	/* #RENTAL CONENT */
+	/* #RENTAL CONTENT */
+
 	.rental-side-nav {
-		width: 13rem;
+		width: 14rem;
 		float: left;
-		/*left: 0;*/
-		font-size: 0.75rem;
+		margin: 0 0 0 1.5rem;
 	}
 	.rental-side-nav li a:hover {
 		text-decoration: underline;
@@ -574,23 +541,11 @@ form .missing-fields-message {
 		color: #009900;
 	}
 	.rental-side-nav h1 {
-		font-size: 1.05rem;
+		font-size: 1.25rem;
 	}
+
 	#content-air-compressors {
-		visibility: visible;
-	}
-	.rental-rates-table {
-		/*top: 0;
-		left: 14rem;*/
-		font-size: 0.75rem;
-		float: left;
-	}
-	.prod-desc {
-		width: 11rem;
-	}
-	.rental-rates-table th,
-	.rental-rates-table td {
-		padding: .1rem .4rem;
+		display: block;
 	}
 
 	/* #CONTACT CONTENT */
@@ -622,46 +577,21 @@ form .missing-fields-message {
 
 	/* #HEADER */
 
-	/*header {
+/*	header {
 		border: 1px solid blue;
 	}*/
 
 	/* #CONTENT CONTAINERS */
 
 	.content,
-	.sales-services-content {
-		width: 70%;
+	.sales-service-rentals-content {
+		width: 75%;
 		min-height: calc(100vh - 170px); /*do I need browser fixes?*/
 		float: left;
 	}
-/*	.rental-content {
-		width: 44rem;
-		height: 42rem;
-		float: left;
-	}*/
 
 	/* #RENTAL CONTENT */
-
-	.rental-side-nav {
-		width: 14rem;
-		font-size: 0.8rem;
-	}
-	.rental-side-nav h1 {
-		font-size: 1.25rem;
-	}
-	.rental-rates-table {
-		width: 28rem;
-		/*left: 16rem;*/
-		font-size: 0.8rem;
-	}
-	.prod-desc {
-		width: 12rem;
-	}
-	.rental-rates-table th,
-	.rental-rates-table td {
-		padding: .1rem .5rem;
-	}
-
+	
 	/* #ASIDE */
 
 	aside {

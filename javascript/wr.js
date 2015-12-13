@@ -95,6 +95,7 @@ $(function() {
         if($(window).width() < 768) {
             $(this).parent().parent().parent().css('display','none');
             $backToRentalsMenu.css('display','block');
+            $('.rental-side-nav a').css('color','#204288');
         }
       });
     });
@@ -110,14 +111,14 @@ $(function() {
     var handleMediaChange = function (mediaQueryList) {
     
         if (mediaQueryList.matches) {
-            $('.rental-side-nav').css('display','block').find('li').css('color','#204288');
             $backToRentalsMenu.css('display','none');
             $rentalRatesTable.css('display','none');
+            $('.rental-side-nav').css('display','block');
             $('#content-air-compressors').css('display','block');
             $('#cat-nav-one').css('color','#009900');
         }
         else {
-            $('.rental-side-nav').css('display','block').find('li').css('color','#204288');
+            $('.rental-side-nav').css('display','block').find('a').css('color','#204288');
             $rentalRatesTable.css('display','none');
             $backToRentalsMenu.css('display','none');
         }
