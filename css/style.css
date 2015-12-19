@@ -205,7 +205,7 @@ header img {
 .product-info-container {
 	width: 100%; /*USE THIS A LOT*/
 	margin: 0 auto 0.75rem;
-	border: 0.125rem solid rgb(243,122,31);
+	border: 0.15rem solid rgb(243,122,31);
 }
 .product-info-container img {
 	max-width: 100%;
@@ -251,7 +251,7 @@ header img {
 	display: none;
 }
 .rental-side-nav {
-	width: 18rem;
+	width: 17rem;
 	margin: 1rem;
 	font-size: 0.9rem;
 	text-transform: uppercase;
@@ -276,7 +276,7 @@ header img {
 .rental-rates-table {
 	display: none;
 	float: left;
-	font-size: 0.75rem;
+	font-size: 0.65rem;
 }
 .rental-rates-table h2 {
 	text-transform: uppercase;
@@ -502,7 +502,7 @@ form .missing-fields-message {
 		margin: 0 0 0 5%;
 	}
 	.product-info-container:hover {
-		border: 0.125rem solid gray;
+		border: 0.15rem solid gray;
 	}
 	.fall-flyer-banner-left {
 		width: 6.25rem;
