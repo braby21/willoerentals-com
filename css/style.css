@@ -278,14 +278,18 @@ header img {
 	float: left;
 	font-size: 0.65rem;
 }
+caption,
 .rental-rates-table h2 {
 	text-transform: uppercase;
-	margin-top: 0.75rem;
+	margin: 0.75rem 0 0.75rem;
+	font-size: 1.15rem;
+	font-weight: bold;
 }
 .rental-rates-table th,
 .rental-rates-table td {
-	padding: .15rem .2rem;
+	padding: .15rem .3rem;
 	border: 0.1rem solid;
+	text-align: left;
 }
 .back-to-rentals-menu {
 	display: none;
@@ -342,33 +346,37 @@ footer {
 
 /* #CONTACT */
 
-.contact-form-container {
-	width: 26rem;
-	margin: 0 auto;
-	display: none;
-	font-size: 0.85rem;
+form {
+  max-width: 24rem;
+  margin: 1rem auto;
+  font-size: 0.85rem;
 }
-form li {
-    list-style: none;
+fieldset {
+  border: none;
 }
 form label {
-	padding: 0.15rem;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
 }
 form input,
-textarea {
-    border: 1px solid #bebebe;
-    padding: 0.5rem;
-    margin: .25rem 0;
-    margin-bottom: 0.75rem;
+form textarea {
+  border: 1px solid #bebebe;
+  width: 85%;
+  outline: 0;
+  padding: 0.75rem;
+  background-color: #f4f7f8;
+  margin-bottom: 1.25rem;
 }
 form input:hover,
-textarea:hover {
+form textarea:hover {
     border: .1rem solid #009900;
 }
 form button {
+	width: 30%;
 	font-size: 1rem;
-    padding: 0.5rem 1rem;
+	margin-left: .65rem;
+	padding: 0.75rem 1.25rem;
     border: none;
 }
 form button:hover{
@@ -385,7 +393,6 @@ form .missing-fields-message {
     padding: .75rem 4rem;
     visibility: hidden;
 }
-
 
 /* #MediaQuery 480px */
 
@@ -553,15 +560,6 @@ form .missing-fields-message {
 		font-size: 1.25rem;
 	}
 	#content-air-compressors {
-		display: block;
-	}
-
-	/* #CONTACT CONTENT */
-
-	.contact-form-container {
-		display: block;
-	}
-	.content.form-content {
 		display: block;
 	}
 
