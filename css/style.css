@@ -88,7 +88,7 @@ header {
 	margin: 0 auto; /*#USE THIS A LOT*/
 }
 h1 {
-	font-size: 1.75rem;
+	font-size: 1.65rem;
 }
 .willoe-header-container {
 	width: 15rem;
@@ -251,7 +251,7 @@ header img {
 	display: none;
 }
 .rental-side-nav {
-	width: 17rem;
+	width: 15rem;
 	margin: 1rem;
 	font-size: 0.9rem;
 	text-transform: uppercase;
@@ -450,21 +450,6 @@ form .missing-fields-message {
 		margin: 0 2.5%;
 	}
 
-	/* #RENTAL CONTENT */
-	
-	.rental-rates-table {
-		margin-left: 1.5rem;
-		font-size: 0.85rem;
-		float: left;
-	}
-	.rental-rates-table td:first-child {
-		min-width: 12rem;
-		padding-right: .5rem;
-	}
-	.back-to-rentals-menu {
-		margin-left: 1.5rem;
-	}
-
 	/* #ASIDE */
 
 	aside.index-contact-aside {
@@ -567,6 +552,18 @@ form .missing-fields-message {
 	}
 	#content-air-compressors {
 		display: block;
+	}
+	.rental-rates-table {
+		margin-left: 1.5rem;
+		font-size: 0.85rem;
+		float: left;
+	}
+	.rental-rates-table td:first-child {
+		min-width: 12rem;
+		padding-right: .5rem;
+	}
+	.back-to-rentals-menu {
+		margin-left: 1.5rem;
 	}
 
 	/* #ASIDE */
