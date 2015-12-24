@@ -276,7 +276,7 @@ header img {
 .rental-rates-table {
 	display: none;
 	float: left;
-	font-size: 0.65rem;
+	font-size: 0.85rem;
 }
 caption,
 .rental-rates-table h2 {
@@ -285,11 +285,14 @@ caption,
 	font-size: 1.15rem;
 	font-weight: bold;
 }
+.rental-rates-table td:first-child {
+	min-width: 12rem;
+	padding-right: .5rem;
+}
 .rental-rates-table th,
 .rental-rates-table td {
-	padding: .15rem .3rem;
+	padding: .15rem .4rem;
 	border: 0.1rem solid;
-	text-align: left;
 }
 .back-to-rentals-menu {
 	display: none;
@@ -452,7 +455,6 @@ form .missing-fields-message {
 	/* #RENTAL CONTENT */
 	
 	.rental-rates-table {
-		font-size: 0.8rem;
 		margin-left: 1.5rem;
 	}
 	.back-to-rentals-menu {
