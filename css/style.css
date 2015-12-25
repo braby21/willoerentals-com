@@ -292,6 +292,9 @@ caption,
 	padding: .15rem .4rem;
 	border: 0.1rem solid;
 }
+.rental-rates-table td:first-child {
+	min-width: 10rem;
+}
 .back-to-rentals-menu {
 	display: none;
 	font-size: 1.5rem;
