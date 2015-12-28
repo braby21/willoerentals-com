@@ -53,23 +53,6 @@ $(function() {
 
     $slide.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
 
-    // // #Launch Form
-    // $('#form-launch').on('click', function(e){
-    //     if ($(window).width() < 720) {
-    //         return
-    //     } else {
-    //         e.preventDefault();
-    //         $('.form-container').css('display', 'block');
-    //         $('#name').val('');
-    //         $('#email').val('');
-    //         $('#phone').val('');
-    //         $('#inquiry').val('');
-    //         $('.overlay').css('display', 'block');
-    //         pauseSlider();
-    //     }
-    // });
-
-
     // #Form-Submit Button
     $('#submit-form').on('click', function(e){
             e.preventDefault();
