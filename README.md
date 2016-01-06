@@ -1,4 +1,4 @@
 # willoerentals.com
 Capstone Project
 
-URL: http://braby21.github.io/willoerentals-com/
+URL: http://joshbraby.github.io/willoerentals-com/
